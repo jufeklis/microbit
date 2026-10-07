@@ -25,7 +25,7 @@ Gebruik de krokodillenklemmen. Let op: de klemmetjes mogen elkaar niet raken!
 
 ## Stap 1: Mond dicht bij het opstarten
 
-- :pins: Zet ``||pins:servo schrijf pin P0 naar||`` in ``||basic:bij opstarten||`` en kies **0**. Zo staat de mond dicht.
+- :pins: Zet ``||pins:schrijf servo op pin P0 naar waarde||`` in ``||basic:bij opstarten||`` en kies **0**. Zo staat de mond dicht.
 - :basic: Teken met ``||basic:toon lichtjes||`` een pompoengezicht met een **gesloten mond**.
 
 ```blocks
@@ -44,7 +44,7 @@ basic.showLeds(`
 Een **functie** is een stukje code met een naam. Je bouwt het één keer en kan het dan zo vaak gebruiken als je wilt.
 
 - :functions: Open ``||functions:Functies||`` (onder **Geavanceerd**) en klik op **Maak een functie**. Noem hem **hap**.
-- :pins: Zet erin: ``||pins:servo schrijf pin P0 naar||`` **60** (mond open), ``||basic:pauzeer 300 ms||``, en dan weer **0** (mond dicht).
+- :pins: Zet erin: ``||pins:schrijf servo op pin P0 naar waarde||`` **60** (mond open), ``||basic:pauzeer 300 ms||``, en dan weer **0** (mond dicht).
 
 ```blocks
 function hap () {
