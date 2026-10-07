@@ -18,6 +18,7 @@ Klap in je handen 👏 om je score te zien. Bij **20 stappen** volgt er een fees
 
 ```blocks
 let stappen = 0
+stappen = 0
 basic.showNumber(stappen)
 ```
 
