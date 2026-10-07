@@ -16,12 +16,18 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 
 De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker).
 
+## Online bekijken
+
+De klaswebsite en het printbare opdrachtblad staan online op **https://jufeklis.github.io/microbit/** zodra GitHub Pages aan staat.
+
+Aanzetten (eenmalig): ga in deze repo naar **Settings → Pages**, kies bij *Source* **Deploy from a branch**, branch **main**, map **/ (root)**, en klik op **Save**. Na een minuutje staat de site online.
+
 ## Wat staat waar?
 
 | Map | Inhoud |
 |---|---|
 | [`tutorials/`](tutorials) | De MakeCode-tutorials hierboven |
-| [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/STARTGIDS_MAKECODE_VOOR_DE_JUF.md). Voor de stappenteller, het snoepdief-alarm en het monster zijn de tutorials de verbeterde versie. |
+| [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/startgids-leerkracht.md). |
 | [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Open `site/index.html` in de browser. Met een [printbaar opdrachtblad voor de pompoen](site/opdrachtblad-pompoen.html) (open in de browser en druk af). |
 | [`cadeau/`](cadeau) | Een klein MicroPython-programmaatje (`main.py`) met muziek en hartjes, en het kant-en-klare `liedje.hex` om naar de micro:bit te slepen |
 

@@ -14,7 +14,7 @@ Goed nieuws: met **Microsoft MakeCode** heb je gekozen voor de **makkelijkste, m
 ## 🧭 Inhoudsopgave
 1. [Hoe werkt MakeCode in 3 stappen?](#1-hoe-werkt-makecode-in-3-stappen)
 2. [Klasorganisatie met 6 micro:bits](#2-klasorganisatie-met-6-microbits)
-3. [Drie kant-en-klare lesopdrachten per niveau](#3-drie-kant-en-klare-lesopdrachten)
+3. [Kant-en-klare lesopdrachten](#3-kant-en-klare-lesopdrachten)
 4. [Het Lesplan van 50 minuten](#4-het-lesplan-van-50-minuten)
 5. [Eerste Hulp Bij Programmeren (EHBO)](#5-eerste-hulp-bij-programmeren)
 
@@ -56,24 +56,35 @@ Gebruik de beproefde **Pair Programming rollen**:
 
 ---
 
-## 3. Drie kant-en-klare lesopdrachten
+## 3. Kant-en-klare lesopdrachten
 
-In deze werkmap vind je 3 uitprintbare opdrachtkaarten:
+In deze map vind je uitprintbare opdrachtkaarten:
 
 ### 🟢 Niveau 1 (3e & 4e lj): De Emotie-Badge & Muziekdoos
 * **Doel:** Knoppen A & B, iconen tonen, geluidjes afspelen.
 * **Wat maken ze:** Een badge die je op je trui kunt hangen. Knop A = Blij gezichtje met een vrolijk toontje. Knop B = Boos/Verdrietig. Logo = Hartje!
-* 📄 Zie fiche: [`OPDRACHT_1_EMOTIE_BADGE.md`](file:///c:/Users/stcousin/microbit/OPDRACHT_1_EMOTIE_BADGE.md)
+* 📄 Zie fiche: [emotie-badge.md](emotie-badge.md)
 
 ### 🟡 Niveau 2 (4e & 5e lj): De Magische Dobbelsteen & Blad-Steen-Schaar
 * **Doel:** De bewegingssensor (`bij schudden`), willekeurige getallen (1-6) en spelletjes.
 * **Wat maken ze:** Schud de micro:bit en hij toont willekeurig een 1, 2, 3, 4, 5 of 6 met een echt dobbel-geluidje!
-* 📄 Zie fiche: [`OPDRACHT_2_SLIMME_DOBBELSTEEN.md`](file:///c:/Users/stcousin/microbit/OPDRACHT_2_SLIMME_DOBBELSTEEN.md)
+* 📄 Zie fiche: [dobbelsteen.md](dobbelsteen.md)
 
 ### 🔴 Niveau 3 (5e & 6e lj): De Echte Stappenteller & Klap-Sensor
 * **Doel:** Variabelen (`stappen = stappen + 1`), de microfoon van de V2 (reageert op klappen in je handen).
 * **Wat maken ze:** Een stappenteller voor aan hun broekzak die elke stap telt. Bij 20 stappen speelt hij een feestliedje! En bij in de handen klappen toont hij het aantal stappen.
-* 📄 Zie fiche: [`OPDRACHT_3_STAPPENTELLER_EN_KLAPSENSOR.md`](file:///c:/Users/stcousin/microbit/OPDRACHT_3_STAPPENTELLER_EN_KLAPSENSOR.md)
+* 📄 Zie fiche: [stappenteller.md](stappenteller.md) · of de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller)
+
+### 🎃 Halloween
+| Les | Niveau | Fiche | Tutorial |
+|---|---|---|---|
+| Spookje & pompoen | 3e–4e lj | [spook-en-pompoen.md](spook-en-pompoen.md) | – |
+| Snoepdief-alarm | 5e–6e lj | [snoepdief.md](snoepdief.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief) |
+| Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
+| Spookjacht (klasspel, radio) | 5e–6e lj | – | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
+| De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](../site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
+
+💡 Met een **tutorial** krijgen de leerlingen de instructies en de juiste blokjes rechtstreeks in MakeCode. Deel de link via het digibord of een QR-code.
 
 ---
 
@@ -88,7 +99,7 @@ In deze werkmap vind je 3 uitprintbare opdrachtkaarten:
 ## 5. Eerste Hulp Bij Programmeren (EHBO)
 
 * **"Het downloaden lukt niet via de knop":**
-  - Klik in MakeCode op de drie puntjes naast 'Downloaden' ➔ kies **Download bestand (.hex)**.
+  - Klik in MakeCode op de drie puntjes naast 'Downloaden' ➔ kies **Download als bestand**.
   - Sleep het gedownloade `.hex` bestandje simpelweg naar de **MICROBIT (D:)** schijf in de verkenner.
 * **"Hij maakt geen geluid":**
   - micro:bit V2 heeft een ingebouwde speaker aan de achterkant. Controleer of het blokje `speel melodie` gebruikt is.
