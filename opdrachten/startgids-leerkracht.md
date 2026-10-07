@@ -73,16 +73,16 @@ In deze map vind je uitprintbare opdrachtkaarten:
 ### 🔴 Niveau 3 (5e & 6e lj): De Echte Stappenteller & Klap-Sensor
 * **Doel:** Variabelen (`stappen = stappen + 1`), de microfoon van de V2 (reageert op klappen in je handen).
 * **Wat maken ze:** Een stappenteller voor aan hun broekzak die elke stap telt. Bij 20 stappen speelt hij een feestliedje! En bij in de handen klappen toont hij het aantal stappen.
-* 📄 Zie fiche: [stappenteller.md](stappenteller.md) · of de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller)
+* 📄 Zie fiche: [stappenteller.md](stappenteller.md) · of de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller-klapsensor)
 
 ### 🎃 Halloween
 | Les | Niveau | Fiche | Tutorial |
 |---|---|---|---|
 | Spookje & pompoen | 3e–4e lj | [spook-en-pompoen.md](spook-en-pompoen.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spook-en-pompoen) |
 | Snoepdief-alarm | 5e–6e lj | [snoepdief.md](snoepdief.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief-alarm) |
-| Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
+| Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster) |
 | Spookjacht (klasspel, radio) | 5e–6e lj | – | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
-| De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](https://jufeklis.github.io/microbit/site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
+| De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](https://jufeklis.github.io/microbit/site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/happende-pompoen) |
 
 💡 Met een **tutorial** krijgen de leerlingen de instructies en de juiste blokjes rechtstreeks in MakeCode. Deel de link via het digibord of een QR-code.
 

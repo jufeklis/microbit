@@ -11,11 +11,11 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 | 😊 Emotie-badge & Muziekdoos (3e–4e lj) | knoppen, pictogrammen, geluid | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/emotie-badge) |
 | 🎲 Slimme Dobbelsteen (4e–5e lj) | schudden, toeval, animatie, als-dan | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/dobbelsteen) |
 | 👻 Spookje & Pompoen (3e–4e lj) | knoppen, eigen tekening, geluid | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spook-en-pompoen) |
-| 🏃 Stappenteller & Klap-Sensor | variabelen, schudden, microfoon, als-dan | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller) |
+| 🏃 Stappenteller & Klap-Sensor | variabelen, schudden, microfoon, als-dan | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller-klapsensor) |
 | 🍬 Het Snoepdief-Alarm | lichtsensor, variabelen, en-voorwaarden | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief-alarm) |
-| 🧟 Het Slapende Monster | microfoon, levens, herhaal-lus, spellogica | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
+| 🧟 Het Slapende Monster | microfoon, levens, herhaal-lus, spellogica | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster) |
 | 👻 Spookjacht | radio, signaalsterkte, staafdiagram (klasspel) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
-| 🎃 De Happende Pompoen | servo, functies, microfoon (nodig: SG90-servo + krokodillenklemmen) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
+| 🎃 De Happende Pompoen | servo, functies, microfoon (nodig: SG90-servo + krokodillenklemmen) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/happende-pompoen) |
 
 De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker). Bij de emotie-badge en het spookje werkt enkel de logo-stap alleen op een V2.
 

@@ -5,7 +5,7 @@
 **Nodig:** micro:bit **V2** (microfoon en speaker)
 **Doel:** werken met een **variabele**, de **microfoon** en een **als-dan**-voorwaarde.
 
-> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller).
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/stappenteller-klapsensor).
 
 ---
 

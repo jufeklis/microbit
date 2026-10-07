@@ -5,7 +5,7 @@
 **Nodig:** micro:bit **V2** (microfoon en speaker)
 **Doel:** werken met de **microfoon**, **levens** bijhouden, een **herhaal-lus** en spellogica.
 
-> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster).
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster).
 
 ---
 

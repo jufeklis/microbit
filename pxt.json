@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",
@@ -10,11 +10,11 @@
     "files": [
         "README.md",
         "main.ts",
-        "tutorials/stappenteller.md",
+        "tutorials/stappenteller-klapsensor.md",
         "tutorials/snoepdief-alarm.md",
-        "tutorials/monster.md",
+        "tutorials/slapend-monster.md",
         "tutorials/spookjacht.md",
-        "tutorials/pompoenkaak.md",
+        "tutorials/happende-pompoen.md",
         "tutorials/emotie-badge.md",
         "tutorials/dobbelsteen.md",
         "tutorials/spook-en-pompoen.md"
