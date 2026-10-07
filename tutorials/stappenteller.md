@@ -59,7 +59,7 @@ input.onSound(DetectedSound.Loud, function () {
 
 ## Stap 5: Feestje bij 20 stappen!
 
-- :logic: Zet een ``||logic:als dan||`` blok uit ``||logic:Logica||`` in ``||input:bij schudden||``, onder de toon.
+- :logic: Zet een ``||logic:als dan||`` blok uit ``||logic:Logisch||`` in ``||input:bij schudden||``, onder de toon.
 - :logic: Vul in: ``||logic:stappen = 20||``.
 - :music: Zet er ``||music:speel melodie||`` in en kies een feestdeuntje.
 - :basic: Toon daarna een ``||basic:pictogram||``, bijvoorbeeld het hartje.

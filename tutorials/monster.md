@@ -26,7 +26,7 @@ basic.showIcon(IconNames.Asleep)
 
 Een klas is nooit helemaal stil. We zetten de microfoon minder gevoelig.
 
-- :input: Zet ``||input:stel luid geluid drempel in||`` in ``||basic:bij opstarten||`` en kies **200**.
+- :input: Zet ``||input:drempelwaarde van geluid luid instellen op||`` in ``||basic:bij opstarten||`` en kies **200**.
 
 ```blocks
 let levens = 3
@@ -43,7 +43,7 @@ input.setSoundThreshold(SoundThreshold.Loud, 200)
 - :basic: Toon het slapende ``||basic:pictogram||``.
 
 ```blocks
-let levens = 3
+let levens = 0
 let bezig = 0
 input.onButtonPressed(Button.A, function () {
     levens = 3
@@ -54,11 +54,11 @@ input.onButtonPressed(Button.A, function () {
 
 ## Stap 4: 30 seconden aftellen
 
-- :loops: Zet een ``||loops:herhaal 30 keer||`` onder in knop A.
+- :loops: Zet een ``||loops:30 keer herhalen||`` onder in knop A.
 - :basic: Zet er ``||basic:pauzeer 1000 ms||`` in. Dat is 1 seconde, dus 30 keer = 30 seconden!
 
 ```blocks
-let levens = 3
+let levens = 0
 let bezig = 0
 input.onButtonPressed(Button.A, function () {
     levens = 3
@@ -75,10 +75,10 @@ input.onButtonPressed(Button.A, function () {
 Na de 30 seconden: heb je nog levens over? Dan heb je gewonnen!
 
 - :logic: Zet onder de herhaal-lus een ``||logic:als dan||``: **levens > 0**.
-- :basic: Toon de tekst **GEWONNEN!** en zet **bezig** op **0**.
+- :basic: Zet er ``||basic:toon tekens||`` in met **GEWONNEN!** en zet **bezig** op **0**.
 
 ```blocks
-let levens = 3
+let levens = 0
 let bezig = 0
 input.onButtonPressed(Button.A, function () {
     levens = 3
@@ -102,7 +102,7 @@ input.onButtonPressed(Button.A, function () {
 - :basic: Toon het boze ``||basic:pictogram||`` en speel een lage ``||music:toon||``: GRRR!
 
 ```blocks
-let levens = 3
+let levens = 0
 let bezig = 0
 let wakker = 0
 input.onSound(DetectedSound.Loud, function () {
@@ -123,7 +123,7 @@ input.onSound(DetectedSound.Loud, function () {
 - :variables: Zet helemaal onderaan **wakker** weer op **0**.
 
 ```blocks
-let levens = 3
+let levens = 0
 let bezig = 0
 let wakker = 0
 input.onSound(DetectedSound.Loud, function () {
