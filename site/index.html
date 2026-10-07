@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeKlas: micro:bit & Microsoft MakeCode (Inclusief Halloween! 🎃)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bovenbalk / Navigatie -->
+  <header class="header">
+    <div class="logo-group">
+      <div class="logo-badge" id="app-logo-badge">🤖</div>
+      <div>
+        <h1 class="app-title">CodeKlas <span id="app-theme-badge">micro:bit & MakeCode</span></h1>
+        <p class="app-subtitle">Het 100% gratis & interactieve programmeerportaal voor de lagere school</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <button id="theme-toggle-btn" class="btn btn-halloween" title="Wissel naar Halloween Editie">
+        <span>🎃 Halloween Thema</span>
+      </button>
+      <a href="https://makecode.microbit.org/?lang=nl" target="_blank" rel="noopener noreferrer" class="btn btn-makecode" title="Open Microsoft MakeCode in nieuw tabblad">
+        <span class="btn-icon">🚀</span> Open MakeCode
+      </a>
+      <button id="toggle-sound-btn" class="btn btn-secondary" title="Geluid aan/uit">
+        <span id="sound-icon">🔊</span> Geluid
+      </button>
+      <button id="digibord-mode-btn" class="btn btn-accent" title="Digibord Volledig Scherm">
+        <span class="btn-icon">📺</span> Digibord
+      </button>
+    </div>
+  </header>
+
+  <!-- Hoofdnavigatie Tabs -->
+  <nav class="nav-tabs">
+    <button class="tab-btn active" data-tab="opdrachten">
+      <span class="tab-icon">🎯</span> Standaard Opdrachten
+    </button>
+    <button class="tab-btn tab-halloween-special" data-tab="halloween">
+      <span class="tab-icon">🎃</span> Halloween Editie (Nieuw!)
+    </button>
+    <button class="tab-btn" data-tab="simulator">
+      <span class="tab-icon">✨</span> micro:bit Simulator
+    </button>
+    <button class="tab-btn" data-tab="timer">
+      <span class="tab-icon">⏱️</span> Rolwisselaar & Klas-Timer
+    </button>
+    <button class="tab-btn" data-tab="uitleg-downloaden">
+      <span class="tab-icon">🔌</span> Hoe werkt Downloaden?
+    </button>
+    <button class="tab-btn" data-tab="juf-tips">
+      <span class="tab-icon">👩‍🏫</span> Tips voor de Juf
+    </button>
+  </nav>
+
+  <!-- Hoofdvenster met Tab-inhoud -->
+  <main class="main-container">
+
+    <!-- TAB 1: STANDAARD OPDRACHTEN & NIVEAUS -->
+    <section id="tab-opdrachten" class="tab-pane active">
+      <div class="section-hero">
+        <h2>Kies jouw MakeCode Project! 🌟</h2>
+        <p>Volg de stappen, klik de blokjes in elkaar in MakeCode en zie je eigen micro:bit tot leven komen!</p>
+      </div>
+
+      <!-- Niveau Kiezer Knoppen -->
+      <div class="level-selector">
+        <button class="level-card level-green active" data-level="1">
+          <div class="level-tag">Niveau 1 • 🟢 Groen</div>
+          <h3>De Emotie-Badge & Muziekdoos 😃</h3>
+          <p>Voor beginners. Knoppen A & B, hartjes op het scherm en vrolijke deuntjes!</p>
+          <div class="level-meta">⏱️ ca. 20 min • 3e & 4e leerjaar</div>
+        </button>
+
+        <button class="level-card level-yellow" data-level="2">
+          <div class="level-tag">Niveau 2 • 🟡 Geel</div>
+          <h3>De Slimme Dobbelsteen 🎲</h3>
+          <p>Gemiddeld. Schud de micro:bit om te rollen met geluidseffect en animatie!</p>
+          <div class="level-meta">⏱️ ca. 35 min • 4e & 5e leerjaar</div>
+        </button>
+
+        <button class="level-card level-red" data-level="3">
+          <div class="level-tag">Niveau 3 • 🔴 Rood</div>
+          <h3>Stappenteller & Klap-Sensor 🏃</h3>
+          <p>Voor uitdagers! Telt elke stap en reageert op klappen in je handen!</p>
+          <div class="level-meta">⏱️ ca. 45 min • 5e & 6e leerjaar</div>
+        </button>
+      </div>
+
+      <!-- Niveau 1 Detailweergave: Emotie Badge -->
+      <div id="level-detail-1" class="level-content">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-green">Niveau 1: Groen</span>
+            <h2>De Magische Emotie-Badge & Muziekdoos</h2>
+            <p class="lead">Maak een interactieve badge voor op je trui met gezichtjes en muziek!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="1">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Open MakeCode & Maak een Nieuw Project</h4>
+              <p>Ga naar <a href="https://makecode.microbit.org/?lang=nl" target="_blank" rel="noopener noreferrer">makecode.microbit.org</a> en klik op <strong>Nieuw project</strong>. Noem het <code>Emotie Badge</code>.</p>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Project gestart!
+              </label>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Knop A: Blij gezichtje & Ba-ding geluidje!</h4>
+              <p>Sleep deze MakeCode blokken in elkaar:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer knop [A ▼] wordt ingedrukt</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ 😊 ]</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [ba-ding ▼] tot gereed</div>
+              </div>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Getest: Knop A maakt me blij!
+              </label>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Knop B: Verdrietig of Verbaasd</h4>
+              <p>Maak een tweede gebeurtenis voor knop B:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer knop [B ▼] wordt ingedrukt</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ 😢 ]</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [wawawawaa ▼] tot gereed</div>
+              </div>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Getest: Knop B toont verdrietig gezichtje!
+              </label>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h4>Gouden Logo: Het kloppende hartje ❤️</h4>
+              <p>Gebruik de touch-sensor van het gouden logo bovenaan:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer logo [aangeraakt ▼] is</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ ❤️ Groot Hart ]</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (150) ms</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ 🤍 Klein Hart ]</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (150) ms</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ ❤️ Groot Hart ]</div>
+              </div>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Getest: Logo laat hartje kloppen!
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Niveau 2 Detailweergave: Slimme Dobbelsteen -->
+      <div id="level-detail-2" class="level-content hidden">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-yellow">Niveau 2: Geel</span>
+            <h2>De Slimme Dobbelsteen & Blad-Steen-Schaar</h2>
+            <p class="lead">Schudden om te rollen met animatie, dobbelgeluid en toevalsgetallen!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="2">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Schudden om een getal 1 tot 6 te rollen</h4>
+              <p>Zoek het blokje <code>bij schudden</code> in <strong>Invoer</strong> en combineer met <strong>Rekenen</strong>:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">bij schudden</div>
+                <div class="mc-block mc-basic mc-indent">toon nummer [ willekeurig getal van (1) tot (6) ]</div>
+              </div>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Basis dobbelsteen werkt!
+              </label>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Rol-animatie & Geluid toevoegen</h4>
+              <p>Laat de dobbelsteen eerst rollen voor hij stopt:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">bij schudden</div>
+                <div class="mc-block mc-music mc-indent">speel toontje [Hoge C] voor (1/16) tel</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ . . . . . / . # . # . / . . . . . ]</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (100) ms</div>
+                <div class="mc-block mc-music mc-indent">speel toontje [Midden G] voor (1/16) tel</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ # . . . # / . . # . . / # . . . # ]</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (100) ms</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [stijgend ▼] tot gereed</div>
+                <div class="mc-block mc-basic mc-indent">toon nummer [ willekeurig getal van (1) tot (6) ]</div>
+              </div>
+              <label class="custom-checkbox">
+                <input type="checkbox"> <span class="checkmark"></span> Rol-animatie & geluid werken!
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Niveau 3 Detailweergave: Stappenteller -->
+      <div id="level-detail-3" class="level-content hidden">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-red">Niveau 3: Rood</span>
+            <h2>De Echte Stappenteller & Klap-Sensor</h2>
+            <p class="lead">Telt elke stap, feliciteert bij 20 stappen en reageert op klappen in je handen!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="3">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Variabele 'stappen' aanmaken</h4>
+              <p>Ga naar <strong>Variabelen</strong>, maak <code>stappen</code> aan en zet bij opstarten op 0:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-basic">bij opstarten</div>
+                <div class="mc-block mc-variable mc-indent">stel [stappen ▼] in op (0)</div>
+                <div class="mc-block mc-basic mc-indent">toon nummer (stappen)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Stappen tellen bij beweging</h4>
+              <p>Elke keer dat je beweegt, verhoogt de teller met 1:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">bij schudden</div>
+                <div class="mc-block mc-variable mc-indent">verander [stappen ▼] met (1)</div>
+                <div class="mc-block mc-music mc-indent">speel toontje [Hoge C] voor (1/16) tel</div>
+                <div class="mc-block mc-logic mc-indent">als &lt; (stappen) = (20) &gt; dan</div>
+                <div class="mc-block mc-music mc-indent-2">speel melodie [ode ▼] tot gereed</div>
+                <div class="mc-block mc-basic mc-indent-2">toon pictogram [ 🏆 Trofee ]</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Klap in je handen om je score te zien! 👏</h4>
+              <p>Gebruik de ingebouwde microfoon van de micro:bit V2:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">bij luid geluid</div>
+                <div class="mc-block mc-basic mc-indent">toon nummer (stappen)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 2: HALLOWEEN SPECIAL EDITIE 🎃 -->
+    <section id="tab-halloween" class="tab-pane">
+      <div class="section-hero halloween-hero">
+        <h2>🎃 Halloween micro:bit Special! 👻</h2>
+        <p>Griezelige projecten voor in de klas: knutsel een spookje, bescherm je snoep en sluip langs het monster!</p>
+      </div>
+
+      <!-- Halloween Niveau Kiezer -->
+      <div class="level-selector">
+        <button class="level-card level-orange active" data-hw-level="1">
+          <div class="level-tag">Halloween 1 • 🎃 Oranje</div>
+          <h3>Spookje & Pompoen 👻</h3>
+          <p>Knoppen tonen een spook dat boe roept, een lachende pompoen en knipperende ogen!</p>
+          <div class="level-meta">⏱️ ca. 25 min • 3e & 4e leerjaar</div>
+        </button>
+
+        <button class="level-card level-purple" data-hw-level="2">
+          <div class="level-tag">Halloween 2 • 🍬 Paars</div>
+          <h3>Snoep-Dief Alarm! 🚨</h3>
+          <p>Verstop de micro:bit in je snoepdoos. Geopend? Sirene loeit & doodshoofd licht op!</p>
+          <div class="level-meta">⏱️ ca. 35 min • 4e & 5e leerjaar</div>
+        </button>
+
+        <button class="level-card level-dark" data-hw-level="3">
+          <div class="level-tag">Halloween 3 • 🧟 Donker</div>
+          <h3>Het Slapende Monster 🤫</h3>
+          <p>Muisstil zijn! Maak je lawaai, dan pikt de V2 microfoon het op en ontwaakt het monster!</p>
+          <div class="level-meta">⏱️ ca. 45 min • 5e & 6e leerjaar</div>
+        </button>
+      </div>
+
+      <!-- Halloween 1 Detail: Spookje & Pompoen -->
+      <div id="hw-detail-1" class="level-content">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-orange">Halloween Niveau 1</span>
+            <h2>Het Knipperende Spook & De Boze Pompoen 👻🎃</h2>
+            <p class="lead">Knutsel een papieren spook of pompoen en laat hem interactief schrikken!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="hw1">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Knop A: Het Zwaaiende Spookje</h4>
+              <p>Laat een spookje verschijnen dat griezelig zwaait en geluid maakt:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer knop [A ▼] wordt ingedrukt</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ . # # # . / # . # . # / # # # # # / # . # . # / # . . . # ]</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [wawawawaa ▼] tot gereed</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Knop B: De Griezelige Jack-o'-Lantern</h4>
+              <p>Teken een pompoen met boze driehoekige oogjes:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer knop [B ▼] wordt ingedrukt</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ . . # . . / # . . . # / # # . # # / . # # # . / # . # . # ]</div>
+                <div class="mc-block mc-music mc-indent">speel toontje [Lage G] voor (1) tel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h4>Gouden Logo: Schrikkende Knipperogen!</h4>
+              <p>Laat de ogen snel knipperen alsof het spookje schrikt van een heks:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer logo [aangeraakt ▼] is</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ . . . . . / . # . # . / . . . . . / . . . . . / . . . . . ]</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (100) ms</div>
+                <div class="mc-block mc-basic mc-indent">wis scherm</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (100) ms</div>
+                <div class="mc-block mc-basic mc-indent">toon lichtjes [ . . . . . / . # . # . / . . . . . / . . . . . / . . . . . ]</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halloween 2 Detail: Snoep Alarm -->
+      <div id="hw-detail-2" class="level-content hidden">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-purple">Halloween Niveau 2</span>
+            <h2>Het Snoep-Dief Alarm (Candy Protector) 🍬🚨</h2>
+            <p class="lead">De lichtsensor beschermt je snoepmand. Doos geopend? ALARM!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="hw2">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Lichtsensor Valstrik Bouwen</h4>
+              <p>In het donker is lichtniveau laag. Gaat de deksel open? Lichtniveau &gt; 50!</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-basic">de hele tijd</div>
+                <div class="mc-block mc-logic mc-indent">als &lt; (lichtniveau) &gt; (50) &gt; dan</div>
+                <div class="mc-block mc-basic mc-indent-2">toon pictogram [ 💀 Doodskop ]</div>
+                <div class="mc-block mc-music mc-indent-2">speel toontje [Hoge C] voor (1/8) tel</div>
+                <div class="mc-block mc-music mc-indent-2">speel toontje [Lage C] voor (1/8) tel</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>Geheime Uitschakelcode (Knop A + B)</h4>
+              <p>Alleen jij kunt het alarm uitzetten:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">wanneer knop [A+B ▼] wordt ingedrukt</div>
+                <div class="mc-block mc-basic mc-indent">wis scherm</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [ba-ding ▼] tot gereed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Halloween 3 Detail: Monster Sluipspel -->
+      <div id="hw-detail-3" class="level-content hidden">
+        <div class="content-header">
+          <div>
+            <span class="badge badge-dark">Halloween Niveau 3</span>
+            <h2>Het Slapende Monster Sluip-Spel 🧟🤫</h2>
+            <p class="lead">Sluip muisstil door de klas. Maak je geluid? Dan ontwaakt het brullende monster!</p>
+          </div>
+          <button class="btn btn-primary test-in-sim-btn" data-demo="hw3">
+            <span>🕹️ Test in Simulator</span>
+          </button>
+        </div>
+
+        <div class="mission-cards">
+          <div class="mission-step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h4>Het Monster Slaapt Rustig (Zzz...)</h4>
+              <p>Zolang het stil is snurkt het monster zachtjes:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-basic">de hele tijd</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ Slapend / Zzz ]</div>
+                <div class="mc-block mc-music mc-indent">speel toontje [Lage C] voor (1/2) tel</div>
+                <div class="mc-block mc-basic mc-indent">pauzeer (1000) ms</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mission-step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h4>LAWWAI! Het Monster Ontwaakt! 💥</h4>
+              <p>De microfoon pikt gegiechel of gestommel op:</p>
+              <div class="makecode-blocks">
+                <div class="mc-block mc-input">bij luid geluid</div>
+                <div class="mc-block mc-music mc-indent">speel melodie [grommend ▼] tot gereed</div>
+                <div class="mc-block mc-basic mc-indent">toon pictogram [ 😠 Boos / Doodskop 💀 ]</div>
+                <div class="mc-block mc-variable mc-indent">verander [levens ▼] met (-1)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: VIRTUELE MICRO:BIT SIMULATOR (MET HALLOWEEN OPTIES!) -->
+    <section id="tab-simulator" class="tab-pane">
+      <div class="sim-wrapper">
+        <div class="sim-left">
+          <h2>Virtuele micro:bit Simulator 🕹️</h2>
+          <p>Test je knopjes, schudden, liedjes en het gouden logo direct hieronder op het scherm!</p>
+
+          <!-- De Grafische micro:bit V2 -->
+          <div class="microbit-board" id="virtual-microbit">
+            <div class="mb-top">
+              <div class="mb-logo" id="sim-logo" title="Raak het gouden logo aan!">⚡ micro:bit</div>
+            </div>
+
+            <div class="mb-center">
+              <button class="mb-btn mb-btn-a" id="sim-btn-a">A</button>
+
+              <!-- 5x5 Led Matrix -->
+              <div class="mb-matrix" id="sim-matrix">
+                <!-- 25 leds dynamically generated -->
+              </div>
+
+              <button class="mb-btn mb-btn-b" id="sim-btn-b">B</button>
+            </div>
+
+            <div class="mb-bottom">
+              <div class="mb-edge-pin">0</div>
+              <div class="mb-edge-pin">1</div>
+              <div class="mb-edge-pin">2</div>
+              <div class="mb-edge-pin">3V</div>
+              <div class="mb-edge-pin">GND</div>
+            </div>
+          </div>
+
+          <!-- Sensoren Bediening -->
+          <div class="tilt-control-card">
+            <h4>🔄 Sensoren Uitproberen:</h4>
+            <div class="tilt-buttons">
+              <button class="btn btn-accent" id="shake-btn">📳 Schudden (Shake)</button>
+              <button class="btn btn-secondary" id="clap-btn">👏 Klappen (Luid Geluid)</button>
+              <button class="btn btn-secondary" id="btn-ab">🔲 Knop A + B</button>
+              <button class="btn btn-outline" id="clear-sim-btn">🔄 Reset Scherm</button>
+            </div>
+            <div id="sim-status-label" class="tilt-status-label">Klaar voor invoer...</div>
+          </div>
+        </div>
+
+        <div class="sim-right">
+          <div class="card sound-player-card">
+            <h3>🎵 Geluidjes & Melodietjes Testen</h3>
+            <p>Klik op een geluidje om het te horen via de virtuele luidspreker:</p>
+            <div class="song-grid">
+              <button class="btn btn-song" data-song="bading">
+                <span>🔔 Ba-ding (Blij)</span>
+              </button>
+              <button class="btn btn-song" data-song="wawa">
+                <span>😢 Wawawawaa (Verdrietig)</span>
+              </button>
+              <button class="btn btn-song" data-song="diceroll">
+                <span>🎲 Dobbelsteen Rol</span>
+              </button>
+              <button class="btn btn-song" data-song="ode">
+                <span>🎼 Ode aan de Vreugde</span>
+              </button>
+              <!-- Halloween Geluiden -->
+              <button class="btn btn-song btn-hw-sound" data-song="boo">
+                <span>👻 Boo! (Spookkreet)</span>
+              </button>
+              <button class="btn btn-song btn-hw-sound" data-song="siren">
+                <span>🚨 Snoep-Alarm Sirene</span>
+              </button>
+              <button class="btn btn-song btn-hw-sound" data-song="roar">
+                <span>🧟 Monster Brul</span>
+              </button>
+              <button class="btn btn-song btn-hw-sound" data-song="snore">
+                <span>💤 Monster Snurkt</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="card led-patterns-card">
+            <h3>💡 Snelle Pictogrammen</h3>
+            <div class="pattern-grid">
+              <button class="btn btn-outline" data-pattern="heart">❤️ Hartje</button>
+              <button class="btn btn-outline" data-pattern="happy">😊 Blij</button>
+              <button class="btn btn-outline" data-pattern="ghost">👻 Spookje</button>
+              <button class="btn btn-outline" data-pattern="pumpkin">🎃 Pompoen</button>
+              <button class="btn btn-outline" data-pattern="skull">💀 Doodskop</button>
+              <button class="btn btn-outline" data-pattern="bat">🦇 Vleermuis</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 4: DIGIBORD KLAS-TIMER & ROLWISSELAAR -->
+    <section id="tab-timer" class="tab-pane">
+      <div class="timer-container" id="timer-box">
+        <div class="timer-header">
+          <h2>⏱️ Digibord Rolwisselaar & Kookwekker</h2>
+          <p>Iedereen werkt samen! Als het belletje gaat, schuift iedereen één stoel door.</p>
+        </div>
+
+        <div class="big-timer-circle">
+          <svg class="progress-ring" width="280" height="280">
+            <circle class="progress-ring-bg" stroke="#e2e8f0" stroke-width="14" fill="transparent" r="120" cx="140" cy="140"/>
+            <circle id="progress-circle" class="progress-ring-fill" stroke="#0078d7" stroke-width="14" stroke-dasharray="753.98" stroke-dashoffset="0" fill="transparent" r="120" cx="140" cy="140"/>
+          </svg>
+          <div class="timer-time-display">
+            <span id="timer-display">10:00</span>
+            <span class="timer-caption">tot rolwissel</span>
+          </div>
+        </div>
+
+        <div class="timer-controls">
+          <button id="timer-start-btn" class="btn btn-primary btn-lg">▶️ Start Timer</button>
+          <button id="timer-pause-btn" class="btn btn-secondary btn-lg" disabled>⏸️ Pauze</button>
+          <button id="timer-reset-btn" class="btn btn-outline btn-lg">🔄 Reset</button>
+        </div>
+
+        <div class="timer-presets">
+          <span>Stel in op:</span>
+          <button class="preset-btn" data-time="300">5 minuten</button>
+          <button class="preset-btn active" data-time="600">10 minuten</button>
+          <button class="preset-btn" data-time="900">15 minuten</button>
+        </div>
+
+        <div class="roles-showcase">
+          <h3 class="roles-title">De 4 Rollen in het Groepje:</h3>
+          <div class="roles-grid">
+            <div class="role-card role-pilot">
+              <div class="role-icon">💻</div>
+              <h4>1. De Piloot</h4>
+              <p>Zit aan het toetsenbord en sleept de blokjes in MakeCode.</p>
+            </div>
+            <div class="role-card role-navigator">
+              <div class="role-icon">🧭</div>
+              <h4>2. De Navigator</h4>
+              <p>Leest de opdrachtkaart en controleert de stappen.</p>
+            </div>
+            <div class="role-card role-hardware">
+              <div class="role-icon">🎮</div>
+              <h4>3. De Tester</h4>
+              <p>Klikt op downloaden en test de echte micro:bit.</p>
+            </div>
+            <div class="role-card role-tester">
+              <div class="role-icon">🎨</div>
+              <h4>4. De Vormgever</h4>
+              <p>Bedenkt leuke tekeningetjes en geluidjes!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: HOE WERKT DOWNLOADEN? -->
+    <section id="tab-uitleg-downloaden" class="tab-pane">
+      <div class="section-hero">
+        <h2>🔌 Hoe zet je de code op je micro:bit?</h2>
+        <p>In 3 simpele stappen staat je programma op het toestelletje. Kinderspel!</p>
+      </div>
+
+      <div class="download-steps-grid">
+        <div class="dl-step-card">
+          <div class="dl-step-badge">Stap 1</div>
+          <div class="dl-step-icon">🔌</div>
+          <h3>Sluit de USB-kabel aan</h3>
+          <p>Plug de micro:bit met de kabel in de computer of Chromebook. Het lampje achterop licht even op.</p>
+        </div>
+
+        <div class="dl-step-card">
+          <div class="dl-step-badge">Stap 2</div>
+          <div class="dl-step-icon">💜</div>
+          <h3>Klik op "Downloaden"</h3>
+          <p>Klik linksonder in MakeCode op de grote paarse knop <strong>Downloaden</strong>. Het gele lampje achterop knippert snel!</p>
+        </div>
+
+        <div class="dl-step-card">
+          <div class="dl-step-badge">Stap 3</div>
+          <div class="dl-step-icon">🔋</div>
+          <h3>Kabel eruit & Meenemen!</h3>
+          <p>Zodra het lampje stopt met knipperen, is hij klaar! Trek de kabel eruit, sluit het batterijdoosje aan en neem je micro:bit mee!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 6: TIPS VOOR DE JUF -->
+    <section id="tab-juf-tips" class="tab-pane">
+      <div class="section-hero">
+        <h2>👩‍🏫 Praktische Tips voor de Juf</h2>
+        <p>Alles wat je nodig hebt voor een ontspannen, enthousiaste en gestructureerde programmeerles.</p>
+      </div>
+
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-icon">🎃</div>
+          <h3>Halloween Lesidee</h3>
+          <p>Laat de kinderen een papieren pompoen of spook knutselen. Schuif de micro:bit erin en laat de klas donker maken voor een magisch griezelmoment!</p>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">✨</div>
+          <h3>Het Lesplan van 50 Minuten</h3>
+          <ul>
+            <li><strong>10 min:</strong> Wauw-introductie op het digibord met de simulator.</li>
+            <li><strong>30 min:</strong> Zelf bouwen met de rolwisselaar-timer.</li>
+            <li><strong>10 min:</strong> Toonmoment in de klas!</li>
+          </ul>
+        </div>
+
+        <div class="tip-card">
+          <div class="tip-icon">📄</div>
+          <h3>Printklare Halloween Bestanden</h3>
+          <ul>
+            <li><code>HALLOWEEN_OPDRACHT_1_SPOOK_POMPOEN.md</code></li>
+            <li><code>HALLOWEEN_OPDRACHT_2_SNOEPDIEF_ALARM.md</code></li>
+            <li><code>HALLOWEEN_OPDRACHT_3_MONSTER_SLUIPSPEL.md</code></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Gemaakt met liefde voor de lagere school ❤️ • Inclusief Halloween Editie 🎃 • 100% Gratis</p>
+  </footer>
+
+  <script src="sound.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
