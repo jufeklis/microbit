@@ -1,6 +1,6 @@
 /**
  * CODEKLAS: MICRO:BIT & MICROSOFT MAKECODE PORTAAL
- * Logica voor simulator, digibord-timer en Halloween special
+ * Logica voor tabs, demo-micro:bit en klastimer
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,69 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   tabButtons.forEach(btn => {
     btn.addEventListener('click', () => switchTab(btn.dataset.tab));
-  });
-
-  // ==========================================
-  // 2. THEMA WISSELAAR (HALLOWEEN THEMA) 🎃
-  // ==========================================
-  const themeToggleBtn = document.getElementById('theme-toggle-btn');
-  const appLogoBadge = document.getElementById('app-logo-badge');
-  const appThemeBadge = document.getElementById('app-theme-badge');
-  let isHalloween = false;
-
-  themeToggleBtn.addEventListener('click', () => {
-    isHalloween = !isHalloween;
-    document.body.classList.toggle('halloween-theme', isHalloween);
-
-    if (isHalloween) {
-      themeToggleBtn.innerHTML = '<span>🚀 Normaal Thema</span>';
-      appLogoBadge.textContent = '🎃';
-      appThemeBadge.textContent = 'micro:bit & MakeCode 👻';
-      window.soundEngine.playSpookyBoo();
-      switchTab('halloween');
-    } else {
-      themeToggleBtn.innerHTML = '<span>🎃 Halloween Thema</span>';
-      appLogoBadge.textContent = '🤖';
-      appThemeBadge.textContent = 'micro:bit & MakeCode';
-      window.soundEngine.playBaDing();
-      switchTab('opdrachten');
-    }
-  });
-
-  // ==========================================
-  // 3. STANDAARD NIVEAU SELECTIE
-  // ==========================================
-  const levelCards = document.querySelectorAll('.level-card[data-level]');
-  const levelContents = document.querySelectorAll('.level-content[id^="level-detail-"]');
-
-  levelCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const level = card.dataset.level;
-      levelCards.forEach(c => c.classList.remove('active'));
-      card.classList.add('active');
-
-      levelContents.forEach(content => {
-        content.classList.toggle('hidden', content.id !== `level-detail-${level}`);
-      });
-    });
-  });
-
-  // ==========================================
-  // 4. HALLOWEEN NIVEAU SELECTIE 🎃
-  // ==========================================
-  const hwLevelCards = document.querySelectorAll('.level-card[data-hw-level]');
-  const hwLevelContents = document.querySelectorAll('.level-content[id^="hw-detail-"]');
-
-  hwLevelCards.forEach(card => {
-    card.addEventListener('click', () => {
-      const level = card.dataset.hwLevel;
-      hwLevelCards.forEach(c => c.classList.remove('active'));
-      card.classList.add('active');
-
-      hwLevelContents.forEach(content => {
-        content.classList.toggle('hidden', content.id !== `hw-detail-${level}`);
-      });
-    });
   });
 
   // ==========================================
@@ -235,29 +172,17 @@ document.addEventListener('DOMContentLoaded', () => {
   btnA.addEventListener('click', () => {
     btnA.classList.add('active');
     setTimeout(() => btnA.classList.remove('active'), 200);
-    if (isHalloween) {
-      showPattern(PATTERNS.ghost);
-      window.soundEngine.playSpookyBoo();
-      setStatus('Knop A: Zwaaiend spookje! 👻 "BOOO!"');
-    } else {
-      showPattern(PATTERNS.happy);
-      window.soundEngine.playBaDing();
-      setStatus('Knop A: Blij gezichtje 😊');
-    }
+    showPattern(PATTERNS.happy);
+    window.soundEngine.playBaDing();
+    setStatus('Knop A: blij gezichtje');
   });
 
   btnB.addEventListener('click', () => {
     btnB.classList.add('active');
     setTimeout(() => btnB.classList.remove('active'), 200);
-    if (isHalloween) {
-      showPattern(PATTERNS.pumpkin);
-      window.soundEngine.playTone(196, 0.4, 'sawtooth');
-      setStatus('Knop B: Boze Jack-o-Lantern Pompoen 🎃');
-    } else {
-      showPattern(PATTERNS.sad);
-      window.soundEngine.playWaWa();
-      setStatus('Knop B: Verdrietig gezichtje 😢');
-    }
+    showPattern(PATTERNS.sad);
+    window.soundEngine.playWaWa();
+    setStatus('Knop B: verdrietig gezichtje');
   });
 
   btnAB.addEventListener('click', () => {
@@ -268,27 +193,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   logo.addEventListener('click', () => {
     logo.classList.add('touched');
-    if (isHalloween) {
-      // Knipperende ogen
-      showPattern([
-        0,0,0,0,0, 0,1,0,1,0, 0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,0
-      ]);
-      window.soundEngine.playTone(500, 0.1, 'sine');
-      setTimeout(() => showPattern(PATTERNS.clear), 120);
-      setTimeout(() => {
-        showPattern([
-          0,0,0,0,0, 0,1,0,1,0, 0,0,0,0,0, 0,0,0,0,0, 0,0,0,0,0
-        ]);
-        window.soundEngine.playTone(600, 0.15, 'sine');
-      }, 240);
-      setStatus('Gouden Logo: Schrikkende Heksen-Ogen! 👀');
-    } else {
-      showPattern(PATTERNS.heart);
-      window.soundEngine.playBaDing();
-      setStatus('Gouden Logo: Kloppend hartje ❤️');
-      setTimeout(() => showPattern(PATTERNS.heart_small), 180);
-      setTimeout(() => showPattern(PATTERNS.heart), 360);
-    }
+    showPattern(PATTERNS.heart);
+    window.soundEngine.playBaDing();
+    setStatus('Logo aangeraakt: kloppend hartje');
+    setTimeout(() => showPattern(PATTERNS.heart_small), 180);
+    setTimeout(() => showPattern(PATTERNS.heart), 360);
     setTimeout(() => logo.classList.remove('touched'), 500);
   });
 
@@ -312,15 +221,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   clapBtn.addEventListener('click', () => {
-    if (isHalloween) {
-      window.soundEngine.playMonsterRoar();
-      showPattern(PATTERNS.skull);
-      setStatus('👏 LAWAAI! Het monster ontwaakt en brult! 🧟💥');
-    } else {
-      window.soundEngine.playClap();
-      showNumber(stepCount);
-      setStatus(`👏 Luid geluid gedetecteerd! Aantal stappen: ${stepCount}`);
-    }
+    window.soundEngine.playClap();
+    showNumber(stepCount);
+    setStatus(`Luid geluid: ${stepCount} keer geschud`);
   });
 
   clearSimBtn.addEventListener('click', () => {
@@ -354,38 +257,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // "Test in Simulator" knoppen
-  document.querySelectorAll('.test-in-sim-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const demoId = btn.dataset.demo;
-      switchTab('simulator');
-
-      if (demoId === '1') {
-        showPattern(PATTERNS.happy);
-        window.soundEngine.playBaDing();
-        setStatus('Niveau 1 Emotie Badge geladen!');
-      } else if (demoId === '2') {
-        shakeBtn.click();
-      } else if (demoId === '3') {
-        stepCount = 10;
-        showNumber(10);
-        window.soundEngine.playStep();
-        setStatus('Niveau 3 Stappenteller actief!');
-      } else if (demoId === 'hw1') {
-        showPattern(PATTERNS.ghost);
-        window.soundEngine.playSpookyBoo();
-        setStatus('🎃 Halloween 1: Spookje & Pompoen geladen! Druk op A of B.');
-      } else if (demoId === 'hw2') {
-        showPattern(PATTERNS.skull);
-        window.soundEngine.playSiren();
-        setStatus('🚨 Halloween 2: Snoepdief Alarm geactiveerd!');
-      } else if (demoId === 'hw3') {
-        window.soundEngine.playMonsterSnore();
-        setStatus('🧟 Halloween 3: Slapend Monster... Muisstil zijn of klap in je handen!');
-      }
-    });
-  });
-
   // ==========================================
   // 7. DIGIBORD KLAS-TIMER
   // ==========================================
@@ -414,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (timeLeft < 60) {
       progressCircle.style.stroke = '#ef4444';
     } else {
-      progressCircle.style.stroke = isHalloween ? '#ea580c' : '#0078d7';
+      progressCircle.style.stroke = '#2563eb';
     }
   }
 
@@ -423,7 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
     isRunning = true;
     timerStartBtn.disabled = true;
     timerPauseBtn.disabled = false;
-    timerStartBtn.textContent = '▶️ Loopt...';
+    timerStartBtn.textContent = 'Loopt…';
 
     timerInterval = setInterval(() => {
       timeLeft--;
@@ -434,10 +305,10 @@ document.addEventListener('DOMContentLoaded', () => {
         isRunning = false;
         timerStartBtn.disabled = false;
         timerPauseBtn.disabled = true;
-        timerStartBtn.textContent = '▶️ Start Timer';
+        timerStartBtn.textContent = 'Start';
 
         window.soundEngine.playBell();
-        alert('🔔 ROLWISSEL! De tijd is om! Schuif allemaal 1 stoel door naar de volgende rol!');
+        alert('Rolwissel! Iedereen schuift één rol door.');
       }
     }, 1000);
   }
@@ -448,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     isRunning = false;
     timerStartBtn.disabled = false;
     timerPauseBtn.disabled = true;
-    timerStartBtn.textContent = '▶️ Hervat';
+    timerStartBtn.textContent = 'Hervat';
   }
 
   function resetTimer() {
@@ -457,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
     timeLeft = totalTime;
     timerStartBtn.disabled = false;
     timerPauseBtn.disabled = true;
-    timerStartBtn.textContent = '▶️ Start Timer';
+    timerStartBtn.textContent = 'Start';
     updateTimerDisplay();
   }
 
@@ -482,12 +353,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('fullscreen-digibord');
     if (document.body.classList.contains('fullscreen-digibord')) {
       switchTab('timer');
-      digibordBtn.innerHTML = '<span>❌ Sluit</span>';
+      digibordBtn.innerHTML = 'Sluiten';
       if (document.documentElement.requestFullscreen) {
         document.documentElement.requestFullscreen().catch(() => {});
       }
     } else {
-      digibordBtn.innerHTML = '<span class="btn-icon">📺</span> Digibord';
+      digibordBtn.innerHTML = 'Digibord';
       if (document.exitFullscreen) {
         document.exitFullscreen().catch(() => {});
       }
