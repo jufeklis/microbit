@@ -22,7 +22,7 @@ De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (m
 |---|---|
 | [`tutorials/`](tutorials) | De MakeCode-tutorials hierboven |
 | [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/STARTGIDS_MAKECODE_VOOR_DE_JUF.md). Voor de stappenteller, het snoepdief-alarm en het monster zijn de tutorials de verbeterde versie. |
-| [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Open `site/index.html` in de browser. |
+| [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Open `site/index.html` in de browser. Met een [printbaar opdrachtblad voor de pompoen](site/opdrachtblad-pompoen.html) (open in de browser en druk af). |
 | [`cadeau/`](cadeau) | Een klein MicroPython-programmaatje (`main.py`) met muziek en hartjes, en het kant-en-klare `liedje.hex` om naar de micro:bit te slepen |
 
 ## Een tutorial aanpassen

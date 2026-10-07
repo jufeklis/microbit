@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Opdrachtblad · De Happende Pompoen</title>
+  <style>
+    @page { size: A4; margin: 14mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      color: #1a1d23;
+      background: #e9ebef;
+      font-size: 11pt;
+      line-height: 1.45;
+    }
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 12px auto;
+      padding: 14mm;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.12);
+    }
+    .print-btn {
+      display: block;
+      margin: 16px auto 0;
+      font: inherit;
+      font-weight: 600;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: #fff;
+      cursor: pointer;
+    }
+    @media print {
+      body { background: none; }
+      .page { margin: 0; padding: 0; box-shadow: none; width: auto; min-height: 0; }
+      .page + .page { break-before: page; }
+      .print-btn { display: none; }
+    }
+
+    header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; border-bottom: 2px solid #1a1d23; padding-bottom: 8px; margin-bottom: 12px; }
+    h1 { font-size: 20pt; line-height: 1.1; }
+    .sub { color: #5d6573; font-size: 10pt; }
+    .names { font-size: 10pt; text-align: right; line-height: 2; white-space: nowrap; }
+    h2 { font-size: 12pt; margin: 14px 0 6px; display: flex; align-items: center; gap: 8px; }
+    .num { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: #ea580c; color: #fff; font-size: 10pt; flex-shrink: 0; }
+    p + p { margin-top: 4px; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .box { border: 1.5px solid #c9cdd4; border-radius: 8px; padding: 8px 10px; }
+    ul.check { list-style: none; }
+    ul.check li::before { content: '☐  '; }
+    .done { margin-top: 4px; font-size: 10pt; color: #5d6573; }
+    .done::before { content: '☐ '; color: #1a1d23; }
+
+    /* MakeCode-blokjes */
+    .blocks { display: inline-flex; flex-direction: column; gap: 2px; margin: 4px 0; font-size: 9.5pt; font-weight: 600; }
+    .b { color: #fff; padding: 3px 9px; border-radius: 4px; width: fit-content; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .b .v { background: #fff; color: #1a1d23; border-radius: 9px; padding: 0 6px; margin: 0 2px; font-weight: 500; }
+    .in1 { margin-left: 16px; }
+    .basic { background: #1e90ff; }
+    .input { background: #d400d4; }
+    .pins { background: #b22222; }
+    .func { background: #3455db; }
+    .leds { display: inline-grid; grid-template-columns: repeat(5, 7px); gap: 1px; vertical-align: middle; margin-left: 4px; background: #fff; padding: 2px; border-radius: 3px; }
+    .leds i { width: 7px; height: 7px; background: #e3e6eb; }
+    .leds i.on { background: #ef4444; }
+
+    svg { display: block; }
+    .wiring { width: 100%; height: auto; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .tip { background: #fff7ed; border-left: 4px solid #ea580c; padding: 6px 10px; font-size: 10pt; margin-top: 10px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .template { width: 100%; height: auto; margin-top: 8px; }
+  </style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">Afdrukken</button>
+
+<!-- PAGINA 1 -->
+<section class="page">
+  <header>
+    <div>
+      <h1>🎃 De Happende Pompoen</h1>
+      <div class="sub">micro:bit V2 · 5e–6e leerjaar · ± 50 minuten</div>
+    </div>
+    <div class="names">
+      Naam: ______________________<br>
+      Groepje: ___________________
+    </div>
+  </header>
+
+  <p><strong>Jullie missie:</strong> bouw een pompoen met een kaak die kan bewegen. Maak je lawaai, dan hapt de pompoen zijn mond open en dicht!</p>
+
+  <div class="two-col" style="margin-top:10px">
+    <div class="box">
+      <strong>Wat heb je nodig?</strong>
+      <ul class="check" style="margin-top:4px">
+        <li>micro:bit <strong>V2</strong> + USB-kabel</li>
+        <li>batterijbakje</li>
+        <li>servo (SG90)</li>
+        <li>3 krokodillenklemmen</li>
+        <li>karton, schaar, plakband</li>
+      </ul>
+    </div>
+    <div class="box">
+      <strong>Wat leer je?</strong>
+      <p style="margin-top:4px">Een <strong>servo</strong> is een klein motortje dat naar een <strong>hoek</strong> draait (0° tot 180°).<br>
+      Een <strong>functie</strong> is een stukje code met een naam. Je maakt het één keer en gebruikt het zo vaak je wilt.</p>
+    </div>
+  </div>
+
+  <h2><span class="num">1</span> Aansluiten</h2>
+  <svg class="wiring" viewBox="0 0 700 150" aria-label="Aansluitschema: bruin naar GND, rood naar 3V, oranje naar pin 0">
+    <!-- micro:bit -->
+    <rect x="10" y="20" width="250" height="110" rx="10" fill="#1f2937"/>
+    <text x="135" y="62" fill="#fff" font-size="15" font-weight="700" text-anchor="middle">micro:bit</text>
+    <g fill="#d4a72c">
+      <rect x="22" y="100" width="40" height="30" rx="4"/>
+      <rect x="70" y="100" width="40" height="30" rx="4"/>
+      <rect x="118" y="100" width="40" height="30" rx="4"/>
+      <rect x="166" y="100" width="40" height="30" rx="4"/>
+      <rect x="214" y="100" width="40" height="30" rx="4"/>
+    </g>
+    <g font-size="12" font-weight="700" text-anchor="middle" fill="#1f2937">
+      <text x="42" y="120">0</text><text x="90" y="120">1</text><text x="138" y="120">2</text><text x="186" y="120">3V</text><text x="234" y="120">GND</text>
+    </g>
+    <!-- draden -->
+    <path d="M42 118 C 42 150, 380 150, 440 92" stroke="#f97316" stroke-width="5" fill="none"/>
+    <path d="M186 118 C 186 140, 380 140, 440 78" stroke="#dc2626" stroke-width="5" fill="none"/>
+    <path d="M234 118 C 234 128, 380 128, 440 64" stroke="#7c4a1e" stroke-width="5" fill="none"/>
+    <!-- servo -->
+    <rect x="440" y="45" width="110" height="60" rx="6" fill="#2563eb"/>
+    <circle cx="520" cy="75" r="14" fill="#fff"/>
+    <rect x="514" y="20" width="12" height="60" rx="6" fill="#fff"/>
+    <text x="490" y="122" font-size="13" font-weight="700" text-anchor="middle" fill="#1a1d23">servo</text>
+    <!-- legende -->
+    <g font-size="12">
+      <rect x="570" y="40" width="14" height="6" fill="#7c4a1e"/><text x="590" y="47">bruin ➜ GND</text>
+      <rect x="570" y="62" width="14" height="6" fill="#dc2626"/><text x="590" y="69">rood ➜ 3V</text>
+      <rect x="570" y="84" width="14" height="6" fill="#f97316"/><text x="590" y="91">oranje ➜ 0</text>
+    </g>
+  </svg>
+  <p style="font-size:10pt">⚠️ De klemmetjes mogen elkaar <strong>niet raken</strong>.</p>
+  <div class="done">Aangesloten!</div>
+
+  <div class="two-col">
+    <div>
+      <h2><span class="num">2</span> Mond dicht bij opstarten</h2>
+      <div class="blocks">
+        <div class="b basic">bij opstarten</div>
+        <div class="b pins in1">schrijf servo op pin <span class="v">P0</span> naar waarde <span class="v">0</span></div>
+        <div class="b basic in1">toon lichtjes
+          <span class="leds"><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></span>
+        </div>
+      </div>
+      <div class="done">Gezicht verschijnt</div>
+
+      <h2><span class="num">3</span> De functie <em>hap</em></h2>
+      <p style="font-size:10pt"><strong>Functies</strong> vind je onder <strong>Geavanceerd</strong>. Klik op <em>Maak een functie</em>.</p>
+      <div class="blocks">
+        <div class="b func">functie <span class="v">hap</span></div>
+        <div class="b basic in1">toon lichtjes
+          <span class="leds"><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span>
+        </div>
+        <div class="b pins in1">schrijf servo op pin <span class="v">P0</span> naar waarde <span class="v">60</span></div>
+        <div class="b basic in1">pauzeer (ms) <span class="v">300</span></div>
+        <div class="b pins in1">schrijf servo op pin <span class="v">P0</span> naar waarde <span class="v">0</span></div>
+        <div class="b basic in1">toon lichtjes <span style="font-weight:400">(mond dicht)</span></div>
+      </div>
+    </div>
+
+    <div>
+      <h2><span class="num">4</span> Testen met knop A</h2>
+      <div class="blocks">
+        <div class="b input">wanneer knop <span class="v">A</span> wordt ingedrukt</div>
+        <div class="b func in1">aanroep hap</div>
+      </div>
+      <div class="done">De servo draait heen en weer</div>
+      <p style="font-size:10pt; margin-top:6px">Gaat de mond niet ver genoeg open? Verander <strong>60</strong> in <strong>90</strong>.<br>
+      Wij kozen: _______ graden.</p>
+
+      <h2><span class="num">5</span> Happen bij lawaai</h2>
+      <div class="blocks">
+        <div class="b input">bij luid geluid</div>
+        <div class="b func in1">aanroep hap</div>
+      </div>
+      <p style="font-size:10pt; margin-top:4px">Zet in <em>bij opstarten</em> ook:</p>
+      <div class="blocks">
+        <div class="b input">drempelwaarde van geluid <span class="v">luid</span> instellen op <span class="v">150</span></div>
+      </div>
+      <div class="done">Klappen ➜ de pompoen hapt!</div>
+
+      <h2><span class="num">6</span> Knutselen</h2>
+      <p style="font-size:10pt">Knip de pompoen uit (zie achterkant) en plak het armpje van de servo vast aan de kaak.</p>
+
+      <div class="tip"><strong>Extra uitdaging:</strong> laat de pompoen grommen met een toon. Hapt hij nu de hele tijd vanzelf? Dat komt omdat de microfoon de speaker hoort. Zet de drempel hoger!</div>
+    </div>
+  </div>
+</section>
+
+<!-- PAGINA 2: UITKNIPMAL -->
+<section class="page">
+  <header>
+    <div>
+      <h1>✂️ Uitknipmal</h1>
+      <div class="sub">Druk af op stevig papier of plak het op karton.</div>
+    </div>
+  </header>
+
+  <ol style="padding-left:18px; font-size:10.5pt">
+    <li>Kleur de pompoen in en knip hem uit langs de <strong>dikke lijn</strong>.</li>
+    <li>Knip de ogen uit.</li>
+    <li>Knip de mond uit langs de <strong>stippellijn</strong> (alleen links, rechts en onderaan!).</li>
+    <li>Plooi de kaak naar achter langs de <strong>plooilijn</strong> bovenaan de mond.</li>
+    <li>Plak de servo achter de pompoen en het servo-armpje aan de achterkant van de kaak.</li>
+  </ol>
+
+  <svg class="template" viewBox="0 0 600 620" aria-label="Uitknipmal van een pompoen met een kaak">
+    <!-- steel -->
+    <path d="M285 95 C 280 60, 300 35, 330 30 L 335 45 C 315 52, 305 70, 310 98 Z" fill="none" stroke="#1a1d23" stroke-width="3"/>
+    <!-- pompoen -->
+    <path d="M300 95
+             C 230 70, 150 80, 110 150
+             C 40 200, 30 420, 110 500
+             C 160 570, 240 580, 300 560
+             C 360 580, 440 570, 490 500
+             C 570 420, 560 200, 490 150
+             C 450 80, 370 70, 300 95 Z"
+          fill="none" stroke="#1a1d23" stroke-width="4"/>
+    <!-- ribbels (versiering, niet knippen) -->
+    <g fill="none" stroke="#9aa1ad" stroke-width="1.5">
+      <path d="M200 110 C 160 220, 165 430, 210 555"/>
+      <path d="M400 110 C 440 220, 435 430, 390 555"/>
+    </g>
+    <!-- ogen -->
+    <path d="M190 260 L 250 260 L 220 205 Z" fill="none" stroke="#1a1d23" stroke-width="3"/>
+    <path d="M350 260 L 410 260 L 380 205 Z" fill="none" stroke="#1a1d23" stroke-width="3"/>
+    <!-- neus -->
+    <path d="M285 320 L 315 320 L 300 295 Z" fill="none" stroke="#1a1d23" stroke-width="2"/>
+    <!-- mond / kaak: snijlijn links, rechts, onder -->
+    <path d="M180 370 L 180 450 L 215 480 L 250 450 L 300 485 L 350 450 L 385 480 L 420 450 L 420 370"
+          fill="none" stroke="#1a1d23" stroke-width="3" stroke-dasharray="10 6"/>
+    <!-- plooilijn -->
+    <line x1="180" y1="370" x2="420" y2="370" stroke="#ea580c" stroke-width="2.5" stroke-dasharray="3 5"/>
+    <text x="300" y="362" font-size="14" text-anchor="middle" fill="#ea580c" font-weight="700">plooilijn</text>
+    <text x="300" y="425" font-size="15" text-anchor="middle" fill="#5d6573">KAAK</text>
+    <!-- schaartje -->
+    <text x="160" y="470" font-size="22">✂️</text>
+  </svg>
+</section>
+
+</body>
+</html>
