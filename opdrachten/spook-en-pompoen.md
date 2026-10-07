@@ -38,7 +38,7 @@ We veranderen jouw micro:bit in een interactief Halloween-figuurtje!
    # . . . #
    ```
 3. Sleep erin uit **Muziek**:  
-   `speel melodie [geheim / wawawawaa ▼] tot gereed`.
+   `speel [wawawawaa ▼] tot het klaar is`.
 
 ---
 
@@ -54,21 +54,21 @@ We veranderen jouw micro:bit in een interactief Halloween-figuurtje!
    # . # . #
    ```
 3. Speel een spannend toontje uit **Muziek**:  
-   `speel toontje [Lage G] voor (1) tel`.
+   `speel toon [Lage G] voor (1) beat`.
 
 ---
 
 ### Stap 4: Gouden Logo = Knipperende Heksen-Ogen!
 1. Sleep uit **Invoer**:  
-   `wanneer logo [aangeraakt ▼] is`.
+   `bij logo [ingedrukt ▼]`.
 2. Maak een knipper-animatie:
    - `toon lichtjes` (ogen wijd open: `•  •`)
-   - `pauzeer (100) ms`
-   - `wis scherm`
-   - `pauzeer (100) ms`
+   - `pauzeer (ms) (100)`
+   - `Wis scherm`
+   - `pauzeer (ms) (100)`
    - `toon lichtjes` (ogen wijd open: `•  •`)
-   - `pauzeer (100) ms`
-   - `wis scherm`
+   - `pauzeer (ms) (100)`
+   - `Wis scherm`
 3. Speel een snel trillend toontje af!
 
 ---

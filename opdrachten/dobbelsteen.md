@@ -29,7 +29,7 @@ We bouwen een digitale dobbelsteen:
 2. Ga naar **Basis** en kies:  
    `toon nummer [ 0 ]`.
 3. Ga naar de paarse categorie **Rekenen** (Wiskunde) en zoek het blokje:  
-   `willekeurig getal van (1) tot (6)`.
+   `kies willekeurig (1) tot (6)`.
 4. Sleep dat ronde blokje in plaats van de `0` in `toon nummer`.
 
 *Test het uit in de simulator:* Klik linksboven op de witte knop **SHAKE** op de virtuele micro:bit. Krijg je een getal tussen 1 en 6?
@@ -40,14 +40,14 @@ We bouwen een digitale dobbelsteen:
 Echte dobbelstenen rollen even voor ze stilvallen. Laten we dat namaken!
 
 In het `bij schudden` blokje zet je nu:
-1. `speel toontje [Hoge C] voor (1/16) tel` (uit *Muziek*).
+1. `speel toon [Hoge C] voor (1/16) beat` (uit *Muziek*).
 2. `toon lichtjes` (teken 1 willekeurig stipje).
-3. `pauzeer (100) ms`.
-4. `speel toontje [Midden G] voor (1/16) tel`.
+3. `pauzeer (ms) (100)`.
+4. `speel toon [Midden G] voor (1/16) beat`.
 5. `toon lichtjes` (teken 4 stipjes in de hoeken).
-6. `pauzeer (100) ms`.
-7. `speel melodie [stijgend ▼] tot gereed`.
-8. `toon nummer (willekeurig getal van 1 tot 6)`.
+6. `pauzeer (ms) (100)`.
+7. `speel [spring omhoog ▼] tot het klaar is`.
+8. `toon nummer (kies willekeurig 1 tot 6)`.
 
 ---
 
@@ -55,7 +55,7 @@ In het `bij schudden` blokje zet je nu:
 Wil je een spelletje spelen tegen je buur?
 1. Maak een variabele genaamd `hand`.
 2. Bij schudden: maak `hand` een willekeurig getal van `1 tot 3`.
-3. Gebruik een **Logica** blokje (`als hand = 1 dan`):
+3. Gebruik een **Logisch** blokje (`als hand = 1 dan`):
    - 1 = Toon een steen (vierkantje leds)
    - 2 = Toon papier (volledig scherm leds)
    - 3 = Toon schaar (gekruiste leds)

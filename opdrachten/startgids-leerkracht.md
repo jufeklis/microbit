@@ -29,7 +29,7 @@ In het midden staan gekleurde categorieën:
 * 🟦 **Basis:** Leds aanzetten, hartjes tonen, tekst scrollen.
 * 🟪 **Invoer:** Knoppen A & B, schudden, het gouden logo aanraken.
 * 🟪 **Muziek:** Liedjes en geluidjes afspelen via de luidspreker.
-* 🟩 **Logica & Variabelen:** Als/dan, punten tellen, willekeurige getallen.
+* 🟩 **Logisch & Variabelen:** Als/dan, punten tellen, willekeurige getallen.
 
 ### Stap 2: Testen in de simulator
 Aan de linkerkant van het scherm staat een **virtuele micro:bit**. Kinderen kunnen op knop A en B klikken of op "SHAKE" om hun code meteen te zien werken vóórdat ze hem op de echte micro:bit zetten!
@@ -52,7 +52,7 @@ Gebruik de beproefde **Pair Programming rollen**:
 * 🎮 **De Tester (Hardware-baas):** Sluit de kabel aan, drukt op downloaden en test de fysieke micro:bit.
 * 🎨 **De Vormgever:** Bedenkt eigen tekeningetjes en geluidjes.
 
-> ⏱️ **De Kookwekker-truc:** Zet de timer op het digibord (in de meegeleverde website) op **10 minuten**. Als de bel gaat, schuiven alle kinderen 1 stoel naar rechts door. Zo heeft iedereen aan het einde van de les geprogrammeerd!
+> ⏱️ **De Kookwekker-truc:** Zet de timer op het digibord (op de [klaswebsite](https://jufeklis.github.io/microbit/), tabblad *Klastimer*) op **10 minuten**. Als de bel gaat, schuiven alle kinderen 1 stoel naar rechts door. Zo heeft iedereen aan het einde van de les geprogrammeerd!
 
 ---
 
@@ -82,7 +82,7 @@ In deze map vind je uitprintbare opdrachtkaarten:
 | Snoepdief-alarm | 5e–6e lj | [snoepdief.md](snoepdief.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief) |
 | Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
 | Spookjacht (klasspel, radio) | 5e–6e lj | – | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
-| De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](../site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
+| De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](https://jufeklis.github.io/microbit/site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
 
 💡 Met een **tutorial** krijgen de leerlingen de instructies en de juiste blokjes rechtstreeks in MakeCode. Deel de link via het digibord of een QR-code.
 
@@ -102,6 +102,6 @@ In deze map vind je uitprintbare opdrachtkaarten:
   - Klik in MakeCode op de drie puntjes naast 'Downloaden' ➔ kies **Download als bestand**.
   - Sleep het gedownloade `.hex` bestandje simpelweg naar de **MICROBIT (D:)** schijf in de verkenner.
 * **"Hij maakt geen geluid":**
-  - micro:bit V2 heeft een ingebouwde speaker aan de achterkant. Controleer of het blokje `speel melodie` gebruikt is.
+  - micro:bit V2 heeft een ingebouwde speaker aan de achterkant. Controleer of het blokje `speel ... tot het klaar is` gebruikt is.
 * **"De simulator doet iets anders dan de echte":**
   - Hebben ze na het aanpassen van de code opnieuw op de knop **Downloaden** geklikt?

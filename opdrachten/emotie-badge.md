@@ -29,7 +29,7 @@ Maak een echte interactieve badge voor op je trui!
 2. Ga naar de blauwe categorie **Basis** en kies:  
    `toon pictogram [ 😊 ]` (of teken zelf een lach met *toon lichtjes*).
 3. Ga naar de roze categorie **Muziek** en sleep erin:  
-   `speel melodie [ba-ding ▼] tot gereed`.
+   `speel [ba ding ▼] tot het klaar is`.
 
 *Test het uit in de simulator links:* Klik op knop **A** op de virtuele micro:bit. Hoor en zie je het?
 
@@ -41,18 +41,18 @@ Maak een echte interactieve badge voor op je trui!
 2. Sleep erin uit **Basis**:  
    `toon pictogram [ 😢 ]`.
 3. Sleep erin uit **Muziek**:  
-   `speel melodie [wawawawaa ▼] tot gereed`.
+   `speel [wawawawaa ▼] tot het klaar is`.
 
 ---
 
 ### Stap 4: Het Gouden Logo aanraken! (micro:bit V2)
 1. Ga naar **Invoer** en sleep het blokje:  
-   `wanneer logo [aangeraakt ▼] is`.
+   `bij logo [ingedrukt ▼]`.
 2. Laat een **kloppend hartje** zien:  
    - `toon pictogram [ ❤️ Groot Hart ]`
-   - `pauzeer (100) ms`
+   - `pauzeer (ms) (100)`
    - `toon pictogram [ 🤍 Klein Hart ]`
-   - `pauzeer (100) ms`
+   - `pauzeer (ms) (100)`
    - `toon pictogram [ ❤️ Groot Hart ]`
 
 ---

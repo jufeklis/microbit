@@ -18,9 +18,9 @@ De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (m
 
 ## Online bekijken
 
-De klaswebsite en het printbare opdrachtblad staan online op **https://jufeklis.github.io/microbit/** zodra GitHub Pages aan staat.
+De klaswebsite staat online op **[https://jufeklis.github.io/microbit/](https://jufeklis.github.io/microbit/)**: lessen, demo-micro:bit, klastimer en uitleg. Het [printbare opdrachtblad voor de pompoen](https://jufeklis.github.io/microbit/site/opdrachtblad-pompoen.html) druk je af vanuit de browser.
 
-Aanzetten (eenmalig): ga in deze repo naar **Settings → Pages**, kies bij *Source* **Deploy from a branch**, branch **main**, map **/ (root)**, en klik op **Save**. Na een minuutje staat de site online.
+De site wordt automatisch bijgewerkt via GitHub Pages (Settings → Pages, branch **main**).
 
 ## Wat staat waar?
 
@@ -28,7 +28,7 @@ Aanzetten (eenmalig): ga in deze repo naar **Settings → Pages**, kies bij *Sou
 |---|---|
 | [`tutorials/`](tutorials) | De MakeCode-tutorials hierboven |
 | [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/startgids-leerkracht.md). |
-| [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Open `site/index.html` in de browser. Met een [printbaar opdrachtblad voor de pompoen](site/opdrachtblad-pompoen.html) (open in de browser en druk af). |
+| [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Online op [https://jufeklis.github.io/microbit/](https://jufeklis.github.io/microbit/). |
 | [`cadeau/`](cadeau) | Een klein MicroPython-programmaatje (`main.py`) met muziek en hartjes, en het kant-en-klare `liedje.hex` om naar de micro:bit te slepen |
 
 ## Een tutorial aanpassen
