@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",
@@ -13,7 +13,8 @@
         "tutorials/stappenteller.md",
         "tutorials/snoepdief.md",
         "tutorials/monster.md",
-        "tutorials/spookjacht.md"
+        "tutorials/spookjacht.md",
+        "tutorials/pompoenkaak.md"
     ],
     "preferredEditor": "blocksprj"
 }

@@ -12,8 +12,9 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 | 🍬 Het Snoepdief-Alarm | lichtsensor, variabelen, en-voorwaarden | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief) |
 | 🧟 Het Slapende Monster | microfoon, levens, herhaal-lus, spellogica | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
 | 👻 Spookjacht | radio, signaalsterkte, staafdiagram (klasspel) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
+| 🎃 De Happende Pompoen | servo, functies, microfoon (nodig: SG90-servo + krokodillenklemmen) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/pompoenkaak) |
 
-De stappenteller en het monster hebben een **micro:bit V2** nodig (microfoon en speaker).
+De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker).
 
 ## Wat staat waar?
 
