@@ -27,8 +27,11 @@ De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (m
 
 ## Een tutorial aanpassen
 
-1. Pas het `.md`-bestand in `tutorials/` aan.
-2. MakeCode bewaart tutorials een tijdje in een cache. Wil je de wijziging meteen zien? Open het project in MakeCode (**Importeren → Importeer van URL** met de link van deze repo) en maak een nieuwe **release** via de GitHub-knop in MakeCode. Een release op github.com zelf leegt de cache niet.
-3. Test de link in een incognitovenster.
+1. Pas het `.md`-bestand in `tutorials/` aan. Een nieuwe tutorial zet je ook in de `files`-lijst van `pxt.json`.
+2. MakeCode laadt altijd de **laatste versie-tag** (`v0.0.5`, `v0.0.6`, …). Verhoog dus `version` in `pxt.json` en push een nieuwe tag met hetzelfde nummer.
+3. MakeCode bewaart elke tutorial-link ook een tijdje in een cache. Een wijziging aan een bestaande tutorial kan dus pas na een tijd zichtbaar worden. Een nieuwe tutorial werkt meteen.
+4. Test de link in een incognitovenster.
+
+`pxt.json` en het lege `main.ts` zijn nodig zodat MakeCode deze repo als project herkent. Laat ze staan.
 
 Meer over het formaat: [MakeCode tutorial-documentatie](https://makecode.com/writing-docs/tutorials).
