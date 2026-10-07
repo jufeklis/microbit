@@ -5,7 +5,7 @@
 **Nodig:** micro:bit (V1 of V2; geluid alleen op V2 of met een luidsprekertje)
 **Doel:** werken met de **lichtsensor**, **variabelen** en een **en**-voorwaarde.
 
-> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief).
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief-alarm).
 
 ---
 

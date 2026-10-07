@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",
@@ -11,7 +11,7 @@
         "README.md",
         "main.ts",
         "tutorials/stappenteller.md",
-        "tutorials/snoepdief.md",
+        "tutorials/snoepdief-alarm.md",
         "tutorials/monster.md",
         "tutorials/spookjacht.md",
         "tutorials/pompoenkaak.md",
