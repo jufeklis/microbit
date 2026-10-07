@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",

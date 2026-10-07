@@ -14,8 +14,8 @@ Alle groepjes maken **hetzelfde programma**. De juf maakt van één micro:bit he
 
 Alle micro:bits moeten op **hetzelfde kanaal** zitten, net als walkietalkies.
 
-- :radio: Zet ``||radio:radio stel groep in||`` in ``||basic:bij opstarten||``. Kies **31** (31 oktober!).
-- :radio: Zet er ``||radio:radio stel zendvermogen in||`` onder en kies **1**. Zo is het signaal zwak en moet je echt zoeken.
+- :radio: Zet ``||radio:Radio instellen groep||`` in ``||basic:bij opstarten||``. Kies **31** (31 oktober!).
+- :radio: Zet er ``||radio:radio stel uitzendkracht in||`` onder en kies **1**. Zo is het signaal zwak en moet je echt zoeken.
 
 ```blocks
 radio.setGroup(31)
@@ -55,7 +55,7 @@ input.onButtonPressed(Button.AB, function () {
 
 - :basic: Neem een ``||basic:de hele tijd||`` blok.
 - :logic: Zet er een ``||logic:als dan||`` in: **spook = 1**.
-- :radio: Zet erin ``||radio:radio verzend getal||`` met **31**, en ``||basic:pauzeer 200 ms||``.
+- :radio: Zet erin ``||radio:Radio verzend nummer||`` met **31**, en ``||basic:pauzeer 200 ms||``.
 
 ```blocks
 let spook = 0
@@ -71,8 +71,8 @@ basic.forever(function () {
 
 Nu de detector. Elke keer dat er een signaal binnenkomt, meten we hoe **sterk** het is. Dichtbij = sterk, ver weg = zwak.
 
-- :radio: Sleep ``||radio:wanneer radio ontvangen receivedNumber||`` naar je werkveld.
-- :variables: Maak een variabele **sterkte** en ``||variables:stel sterkte in op||`` ``||radio:ontvangen pakket signaalsterkte||``.
+- :radio: Sleep ``||radio:wanneer de radio ontvangt receivedNumber||`` naar je werkveld.
+- :variables: Maak een variabele **sterkte** en ``||variables:stel sterkte in op||`` ``||radio:pakket ontvangen signaalsterkte||``.
 
 ```blocks
 let sterkte = 0
@@ -85,8 +85,8 @@ radio.onReceivedNumber(function (receivedNumber) {
 
 De sterkte is een getal tussen ongeveer **-90** (ver weg) en **-45** (vlakbij). We zetten dat om naar staafjes van 0 tot 9.
 
-- :led: Zet ``||led:plot staafdiagram||`` onder het vorige blok, met **tot 9**.
-- :calculator: Zet in het eerste vakje ``||math:verdeel||`` **sterkte** van **-90** tot **-45** naar **0** tot **9**.
+- :led: Zet ``||led:plot staafdiagram van ... tot 9||`` onder het vorige blok.
+- :calculator: Zet in het eerste vakje ``||math:vertaal||`` **sterkte** van **-90** tot **-45** naar van **0** tot **9**.
 
 ```blocks
 let sterkte = 0
