@@ -4,6 +4,8 @@
 **Tijd:** ca. 20 - 30 minuten  
 **Doel:** Leren hoe **invoer** (knopjes A en B) zorgt voor **uitvoer** (lampjes en geluid).
 
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/emotie-badge).
+
 ---
 
 ## 🎯 De Missie

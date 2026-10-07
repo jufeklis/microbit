@@ -4,6 +4,8 @@
 **Tijd:** ca. 30 - 40 minuten  
 **Doel:** Werken met de **bewegingssensor** (`bij schudden`), **toeval/kans** (willekeurig getal) en **voorwaarden**.
 
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/dobbelsteen).
+
 ---
 
 ## 🎯 De Missie

@@ -63,12 +63,12 @@ In deze map vind je uitprintbare opdrachtkaarten:
 ### 🟢 Niveau 1 (3e & 4e lj): De Emotie-Badge & Muziekdoos
 * **Doel:** Knoppen A & B, iconen tonen, geluidjes afspelen.
 * **Wat maken ze:** Een badge die je op je trui kunt hangen. Knop A = Blij gezichtje met een vrolijk toontje. Knop B = Boos/Verdrietig. Logo = Hartje!
-* 📄 Zie fiche: [emotie-badge.md](emotie-badge.md)
+* 📄 Zie fiche: [emotie-badge.md](emotie-badge.md) · of de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/emotie-badge)
 
 ### 🟡 Niveau 2 (4e & 5e lj): De Magische Dobbelsteen & Blad-Steen-Schaar
 * **Doel:** De bewegingssensor (`bij schudden`), willekeurige getallen (1-6) en spelletjes.
 * **Wat maken ze:** Schud de micro:bit en hij toont willekeurig een 1, 2, 3, 4, 5 of 6 met een echt dobbel-geluidje!
-* 📄 Zie fiche: [dobbelsteen.md](dobbelsteen.md)
+* 📄 Zie fiche: [dobbelsteen.md](dobbelsteen.md) · of de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/dobbelsteen)
 
 ### 🔴 Niveau 3 (5e & 6e lj): De Echte Stappenteller & Klap-Sensor
 * **Doel:** Variabelen (`stappen = stappen + 1`), de microfoon van de V2 (reageert op klappen in je handen).
@@ -78,7 +78,7 @@ In deze map vind je uitprintbare opdrachtkaarten:
 ### 🎃 Halloween
 | Les | Niveau | Fiche | Tutorial |
 |---|---|---|---|
-| Spookje & pompoen | 3e–4e lj | [spook-en-pompoen.md](spook-en-pompoen.md) | – |
+| Spookje & pompoen | 3e–4e lj | [spook-en-pompoen.md](spook-en-pompoen.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spook-en-pompoen) |
 | Snoepdief-alarm | 5e–6e lj | [snoepdief.md](snoepdief.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief) |
 | Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/monster) |
 | Spookjacht (klasspel, radio) | 5e–6e lj | – | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |

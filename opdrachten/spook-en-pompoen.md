@@ -5,6 +5,8 @@
 **Thema:** Halloween knutselen & griezelen 👻  
 **Doel:** Leren werken met knoppen, animaties (knipperende ogen) en griezelgeluidjes.
 
+> 💻 Liever stap voor stap op het scherm? Open de [tutorial in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spook-en-pompoen).
+
 ---
 
 ## 🎯 De Missie
