@@ -19,7 +19,7 @@ De stappenteller en het monster hebben een **micro:bit V2** nodig (microfoon en 
 | Map | Inhoud |
 |---|---|
 | [`tutorials/`](tutorials) | De MakeCode-tutorials hierboven |
-| [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/STARTGIDS_MAKECODE_VOOR_DE_JUF.md) |
+| [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/STARTGIDS_MAKECODE_VOOR_DE_JUF.md). Voor de stappenteller, het snoepdief-alarm en het monster zijn de tutorials de verbeterde versie. |
 | [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Open `site/index.html` in de browser. |
 | [`cadeau/`](cadeau) | Een klein MicroPython-programmaatje (`main.py`) met muziek en hartjes, en het kant-en-klare `liedje.hex` om naar de micro:bit te slepen |
 

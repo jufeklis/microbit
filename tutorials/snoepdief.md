@@ -26,15 +26,18 @@ basic.showNumber(input.lightLevel())
 Je krijgt 3 seconden om de deksel te sluiten.
 
 - :input: Sleep ``||input:wanneer knop A wordt ingedrukt||`` naar je werkveld.
-- :basic: Toon de getallen **3**, **2**, **1** en ``||basic:wis scherm||``. Brandende lampjes zouden de lichtsensor storen!
+- :basic: Toon de getallen **3**, **2**, **1** met telkens ``||basic:pauzeer 1000 ms||`` ertussen, en dan ``||basic:wis scherm||``. Brandende lampjes zouden de lichtsensor storen!
 - :variables: Zet daarna **bewaking** op **1**.
 
 ```blocks
 let bewaking = 0
 input.onButtonPressed(Button.A, function () {
     basic.showNumber(3)
+    basic.pause(1000)
     basic.showNumber(2)
+    basic.pause(1000)
     basic.showNumber(1)
+    basic.pause(1000)
     basic.clearScreen()
     bewaking = 1
 })
