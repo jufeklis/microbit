@@ -41,8 +41,8 @@ input.onButtonPressed(Button.B, function () {
 ## Stap 3: Elke minuut meten
 
 - :loops: Sleep ``||loops:elk 60000 ms||`` naar je werkveld. 60000 milliseconden = **1 minuut**.
-- :datalogger: Zet er ``||datalogger:log gegevens||`` in.
-- :datalogger: Maak twee kolommen: **temperatuur** met ``||input:temperatuur (°C)||`` en **licht** met ``||input:lichtniveau||``.
+- :datalogger: Zet er ``||datalogger:log data||`` in.
+- :datalogger: Vul twee kolommen in (**column** = naam, **value** = waarde): **temperatuur** met ``||input:temperatuur (°C)||`` en **licht** met ``||input:lichtniveau||``.
 
 ```blocks
 loops.everyInterval(60000, function () {

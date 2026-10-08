@@ -86,6 +86,19 @@ In deze map vind je uitprintbare opdrachtkaarten:
 
 💡 Met een **tutorial** krijgen de leerlingen de instructies en de juiste blokjes rechtstreeks in MakeCode. Deel de link via het digibord of een QR-code.
 
+### 🧪 Meer lessen (alleen als tutorial)
+| Les | Wat leren ze | Tutorial |
+|---|---|---|
+| Klasweerstation | sensoren, datalogger, grafiek | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/weerstation) |
+| Kompas & schattenjacht | kompas, als-dan-anders, graden | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kompas-schattenjacht) |
+| Reactiespel | tijd meten, variabelen, toeval | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/reactiespel) |
+| Vang het snoepje | figuurtjes, spellogica, score | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/vang-het-snoepje) |
+| Klasstemming | radio, tellen, variabelen | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
+| Morse-berichten | radio, morsecode, als-dan | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
+| Virus-simulatie | radio, kans, simulatie | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
+
+💡 **Radio-lessen** (klasstemming, morse, virus, spookjacht): alle groepjes zetten **hetzelfde programma** op hun micro:bit. Met 6 micro:bits werkt dat perfect.
+
 ---
 
 ## 4. Het Lesplan van 50 minuten

@@ -16,8 +16,15 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 | 🧟 Het Slapende Monster | microfoon, levens, herhaal-lus, spellogica | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster) |
 | 👻 Spookjacht | radio, signaalsterkte, staafdiagram (klasspel) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
 | 🎃 De Happende Pompoen | servo, functies, microfoon (nodig: SG90-servo + krokodillenklemmen) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/happende-pompoen) |
+| 🌡️ Klasweerstation | sensoren, datalogger, grafiek | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/weerstation) |
+| 🧭 Kompas & Schattenjacht | kompas, als-dan-anders, graden | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kompas-schattenjacht) |
+| ⚡ Reactiespel | tijd meten, variabelen, toeval | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/reactiespel) |
+| 🍭 Vang het Snoepje | figuurtjes, spellogica, score | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/vang-het-snoepje) |
+| 🗳️ Klasstemming | radio, tellen, variabelen | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
+| 📡 Morse-berichten | radio, morsecode, als-dan | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
+| 🦠 Virus-simulatie | radio, kans, simulatie | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
 
-De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker). Bij de emotie-badge en het spookje werkt enkel de logo-stap alleen op een V2.
+De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker). Het weerstation heeft ook een V2 nodig (datalogger). Bij de emotie-badge en het spookje werkt enkel de logo-stap alleen op een V2. Klasstemming, morse en het virusspel gebruiken de radio: zet het programma op meerdere micro:bits.
 
 ## Online bekijken
 
