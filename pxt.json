@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",
@@ -17,7 +17,14 @@
         "tutorials/happende-pompoen.md",
         "tutorials/emotie-badge.md",
         "tutorials/dobbelsteen.md",
-        "tutorials/spook-en-pompoen.md"
+        "tutorials/spook-en-pompoen.md",
+        "tutorials/weerstation.md",
+        "tutorials/kompas-schattenjacht.md",
+        "tutorials/reactiespel.md",
+        "tutorials/vang-het-snoepje.md",
+        "tutorials/klasstemming.md",
+        "tutorials/morse-berichten.md",
+        "tutorials/virus-simulatie.md"
     ],
     "preferredEditor": "blocksprj"
 }
