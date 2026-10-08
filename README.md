@@ -16,7 +16,7 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 | 🧟 Het Slapende Monster | microfoon, levens, herhaal-lus, spellogica | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster) |
 | 👻 Spookjacht | radio, signaalsterkte, staafdiagram (klasspel) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
 | 🎃 De Happende Pompoen | servo, functies, microfoon (nodig: SG90-servo + krokodillenklemmen) | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/happende-pompoen) |
-| 🌡️ Klasweerstation | sensoren, datalogger, grafiek | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/weerstation) |
+| 🌡️ Klasweerstation | sensoren, datalogger, grafiek | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasweerstation) |
 | 🧭 Kompas & Schattenjacht | kompas, als-dan-anders, graden | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kompas-schattenjacht) |
 | ⚡ Reactiespel | tijd meten, variabelen, toeval | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/reactiespel) |
 | 🍭 Vang het Snoepje | figuurtjes, spellogica, score | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/vang-het-snoepje) |

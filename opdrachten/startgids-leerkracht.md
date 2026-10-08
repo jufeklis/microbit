@@ -1,4 +1,4 @@
-# 🌟 Handleiding voor de Juf: micro:bit & Microsoft MakeCode
+| Virus-simulatie |  | [virus-simulatie.md](virus-simulatie.md) | [openen]| Morse-berichten |  | [morse-berichten.md](morse-berichten.md) | [openen]| Klasstemming |  | [klasstemming.md](klasstemming.md) | [openen]| Vang het snoepje |  | [vang-het-snoepje.md](vang-het-snoepje.md) | [openen]| Reactiespel |  | [reactiespel.md](reactiespel.md) | [openen]| Kompas & schattenjacht |  | [kompas-schattenjacht.md](kompas-schattenjacht.md) | [openen]| Klasweerstation |  | [klasweerstation.md](klasweerstation.md) | [openen]# 🌟 Handleiding voor de Juf: micro:bit & Microsoft MakeCode
 
 Beste juf,
 
@@ -81,21 +81,21 @@ In deze map vind je uitprintbare opdrachtkaarten:
 | Spookje & pompoen | 3e–4e lj | [spook-en-pompoen.md](spook-en-pompoen.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spook-en-pompoen) |
 | Snoepdief-alarm | 5e–6e lj | [snoepdief.md](snoepdief.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/snoepdief-alarm) |
 | Het slapende monster (V2) | 5e–6e lj | [monster.md](monster.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/slapend-monster) |
-| Spookjacht (klasspel, radio) | 5e–6e lj | – | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
+| Spookjacht (klasspel, radio) | 5e–6e lj | [spookjacht.md](spookjacht.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/spookjacht) |
 | De happende pompoen (V2 + servo) | 5e–6e lj | [printbaar opdrachtblad](https://jufeklis.github.io/microbit/site/opdrachtblad-pompoen.html) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/happende-pompoen) |
 
 💡 Met een **tutorial** krijgen de leerlingen de instructies en de juiste blokjes rechtstreeks in MakeCode. Deel de link via het digibord of een QR-code.
 
-### 🧪 Meer lessen (alleen als tutorial)
-| Les | Wat leren ze | Tutorial |
-|---|---|---|
-| Klasweerstation | sensoren, datalogger, grafiek | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/weerstation) |
-| Kompas & schattenjacht | kompas, als-dan-anders, graden | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kompas-schattenjacht) |
-| Reactiespel | tijd meten, variabelen, toeval | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/reactiespel) |
-| Vang het snoepje | figuurtjes, spellogica, score | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/vang-het-snoepje) |
-| Klasstemming | radio, tellen, variabelen | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
-| Morse-berichten | radio, morsecode, als-dan | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
-| Virus-simulatie | radio, kans, simulatie | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
+### 🧪 Meer lessen
+| Les | Wat leren ze | Fiche | Tutorial |
+|---|---|---|---|
+| Klasweerstation | sensoren, datalogger, grafiek | [klasweerstation.md](klasweerstation.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasweerstation) |
+| Kompas & schattenjacht | kompas, als-dan-anders, graden | [kompas-schattenjacht.md](kompas-schattenjacht.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kompas-schattenjacht) |
+| Reactiespel | tijd meten, variabelen, toeval | [reactiespel.md](reactiespel.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/reactiespel) |
+| Vang het snoepje | figuurtjes, spellogica, score | [vang-het-snoepje.md](vang-het-snoepje.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/vang-het-snoepje) |
+| Klasstemming | radio, tellen, variabelen | [klasstemming.md](klasstemming.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
+| Morse-berichten | radio, morsecode, als-dan | [morse-berichten.md](morse-berichten.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
+| Virus-simulatie | radio, kans, simulatie | [virus-simulatie.md](virus-simulatie.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
 
 💡 **Radio-lessen** (klasstemming, morse, virus, spookjacht): alle groepjes zetten **hetzelfde programma** op hun micro:bit. Met 6 micro:bits werkt dat perfect.
 
