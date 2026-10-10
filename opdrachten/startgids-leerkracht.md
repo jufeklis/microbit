@@ -1,4 +1,11 @@
 | Virus-simulatie |  | [virus-simulatie.md](virus-simulatie.md) | [openen]| Morse-berichten |  | [morse-berichten.md](morse-berichten.md) | [openen]| Klasstemming |  | [klasstemming.md](klasstemming.md) | [openen]| Vang het snoepje |  | [vang-het-snoepje.md](vang-het-snoepje.md) | [openen]| Reactiespel |  | [reactiespel.md](reactiespel.md) | [openen]| Kompas & schattenjacht |  | [kompas-schattenjacht.md](kompas-schattenjacht.md) | [openen]| Klasweerstation |  | [klasweerstation.md](klasweerstation.md) | [openen]# 🌟 Handleiding voor de Juf: micro:bit & Microsoft MakeCode
+| Kansrekenen met 600 worpen | lijsten, herhalen, kans | [kansrekenen.md](kansrekenen.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kansrekenen) |
+| Componeren & theremin | melodie, tempo, bewegingssensor | [componeren.md](componeren.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/componeren) |
+| Springteller | bewegingssensor, drempel, record | [springteller.md](springteller.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/springteller) |
+| Verkeerslicht | pinnen, LEDs, volgorde | [verkeerslicht.md](verkeerslicht.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/verkeerslicht) |
+| Plantenbewaker | analoog meten, grens, staafdiagram | [plantenbewaker.md](plantenbewaker.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/plantenbewaker) |
+| Robotauto | servo-motoren, herhalen, afstellen | [robotauto.md](robotauto.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/robotauto) |
+| Train je eigen AI (CreateAI) | AI, voorbeelden, trainen | [createai.md](createai.md) | [CreateAI](https://createai.microbit.org) |
 
 Beste juf,
 

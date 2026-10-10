@@ -23,8 +23,16 @@ Leerlingen klikken op een link. MakeCode opent met de tutorial stap voor stap, i
 | 🗳️ Klasstemming | radio, tellen, variabelen | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
 | 📡 Morse-berichten | radio, morsecode, als-dan | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
 | 🦠 Virus-simulatie | radio, kans, simulatie | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
+| 🎲 Kansrekenen met 600 worpen | lijsten, herhalen, kans | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kansrekenen) |
+| 🎵 Componeren & theremin | melodie, tempo, bewegingssensor | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/componeren) |
+| 🤸 Springteller | bewegingssensor, drempel, record | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/springteller) |
+| 🚦 Verkeerslicht | pinnen, LEDs, volgorde | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/verkeerslicht) |
+| 🌱 Plantenbewaker | analoog meten, grens, staafdiagram | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/plantenbewaker) |
+| 🚗 Robotauto | servo-motoren, herhalen, afstellen | [Open in MakeCode](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/robotauto) |
 
-De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker). Het weerstation heeft ook een V2 nodig (datalogger). Bij de emotie-badge en het spookje werkt enkel de logo-stap alleen op een V2. Klasstemming, morse en het virusspel gebruiken de radio: zet het programma op meerdere micro:bits.
+De stappenteller, het monster en de pompoen hebben een **micro:bit V2** nodig (microfoon en speaker). Het weerstation heeft ook een V2 nodig (datalogger). Bij de emotie-badge en het spookje werkt enkel de logo-stap alleen op een V2. Klasstemming, morse en het virusspel gebruiken de radio: zet het programma op meerdere micro:bits. Componeren heeft een V2 nodig. Verkeerslicht, plantenbewaker en robotauto hebben materiaal uit een uitbreidingskit nodig.
+
+🤖 **Extra:** met [micro:bit CreateAI](https://createai.microbit.org) trainen leerlingen hun eigen AI, zie het [opdrachtblad](opdrachten/createai.md).
 
 ## Online bekijken
 
@@ -39,6 +47,7 @@ De site wordt automatisch bijgewerkt via GitHub Pages (Settings → Pages, branc
 | [`tutorials/`](tutorials) | De MakeCode-tutorials hierboven |
 | [`opdrachten/`](opdrachten) | Opdrachtbladen om af te drukken, plus de [startgids voor de juf](opdrachten/startgids-leerkracht.md). |
 | [`site/`](site) | Klaswebsite voor op het digibord: opdrachten, klastimer met rolwissel, uitleg om te downloaden. Online op [https://jufeklis.github.io/microbit/](https://jufeklis.github.io/microbit/). |
+| [`juf-tools/`](juf-tools) | Programma's voor de leerkracht: lawaaimeter, beurtkiezer en quiz-zoemers (MicroPython, met kant-en-klare .hex) |
 | [`cadeau/`](cadeau) | Een klein MicroPython-programmaatje (`main.py`) met muziek en hartjes, en het kant-en-klare `liedje.hex` om naar de micro:bit te slepen |
 
 ## Een tutorial aanpassen

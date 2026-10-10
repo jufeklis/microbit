@@ -21,5 +21,12 @@ Begin met de 📘 [startgids voor de leerkracht](startgids-leerkracht.md).
 | 🗳️ Klasstemming | 5e–6e | [klasstemming.md](klasstemming.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/klasstemming) |
 | 📡 Morse-berichten | 5e–6e | [morse-berichten.md](morse-berichten.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/morse-berichten) |
 | 🦠 Virus-simulatie | 5e–6e | [virus-simulatie.md](virus-simulatie.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/virus-simulatie) |
+| 🎲 Kansrekenen met 600 worpen | 5e–6e | [kansrekenen.md](kansrekenen.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/kansrekenen) |
+| 🎵 Componeren & theremin | 5e–6e | [componeren.md](componeren.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/componeren) |
+| 🤸 Springteller | 5e–6e | [springteller.md](springteller.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/springteller) |
+| 🚦 Verkeerslicht | 5e–6e | [verkeerslicht.md](verkeerslicht.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/verkeerslicht) |
+| 🌱 Plantenbewaker | 5e–6e | [plantenbewaker.md](plantenbewaker.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/plantenbewaker) |
+| 🚗 Robotauto | 5e–6e | [robotauto.md](robotauto.md) | [openen](https://makecode.microbit.org/?lang=nl#tutorial:https://github.com/jufeklis/microbit/tutorials/robotauto) |
+| 🤖 Train je eigen AI | 5e–6e | [createai.md](createai.md) | [CreateAI](https://createai.microbit.org) |
 
 💡 De fiches voor de nieuwere lessen zijn gemaakt uit de tutorials, zodat papier en scherm altijd dezelfde stappen tonen.

@@ -1,6 +1,6 @@
 {
     "name": "microbit-lessen",
-    "version": "0.0.11",
+    "version": "0.0.12",
     "description": "micro:bit lessen en MakeCode-tutorials voor het lager onderwijs",
     "dependencies": {
         "core": "*",
@@ -24,7 +24,13 @@
         "tutorials/vang-het-snoepje.md",
         "tutorials/klasstemming.md",
         "tutorials/morse-berichten.md",
-        "tutorials/virus-simulatie.md"
+        "tutorials/virus-simulatie.md",
+        "tutorials/kansrekenen.md",
+        "tutorials/componeren.md",
+        "tutorials/springteller.md",
+        "tutorials/verkeerslicht.md",
+        "tutorials/plantenbewaker.md",
+        "tutorials/robotauto.md"
     ],
     "preferredEditor": "blocksprj"
 }
